@@ -131,7 +131,6 @@
 		B256EAE81FFE022200BE59B3 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
-				B24D9C041F3D90EC00A1D1B7 /* TabMenu.storyboard */,
 				B25FED271F50274700938840 /* MenuPopupView.swift */,
 				B2523FDD1FF4F47D00D564C4 /* HamburgerView.swift */,
 				B28D52341F41DB4300DE260C /* ConstraintsHelper.swift */,
@@ -142,7 +141,7 @@
 				B200BF451FB43A8000E9352C /* UIView.swift */,
 				B28EDDE21FB6D86E008D46F2 /* MenuItemCollectionFlowLayout.swift */,
 				B259DF1D1FC965A6000D4154 /* CenteredButton.swift */,
-				B28EDDE41FB6FEA1008D46F2 /* Fonts */,
+				B28EDDE41FB6FEA1008D46F2 /* image */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -160,15 +159,16 @@
 			path = icon;
 			sourceTree = "<group>";
 		};
-		B28EDDE41FB6FEA1008D46F2 /* Fonts */ = {
+		B28EDDE41FB6FEA1008D46F2 /* image */ = {
 			isa = PBXGroup;
 			children = (
+				B24D9C041F3D90EC00A1D1B7 /* TabMenu.storyboard */,
 				B2523FE01FF4FE1300D564C4 /* Combined-Shape-1.png */,
 				B2523FE11FF4FE1300D564C4 /* Combined-Shape-2.png */,
 				B2523FDF1FF4FE1300D564C4 /* Combined-Shape.png */,
 				B25AF4D01FDA98AD00EEB4DA /* 3.png */,
 			);
-			path = Fonts;
+			path = image;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

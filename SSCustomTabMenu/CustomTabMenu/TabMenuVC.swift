@@ -36,7 +36,6 @@ class TabMenuVC: UIViewController,BasicAnimation{
     fileprivate var backImageView: UIImageView?
     var arrMenuItems = [Int: MenuItem]()
     let tapRec = UITapGestureRecognizer()
-    var tapPan = UIPanGestureRecognizer()
     
     var userView = UIView()
     // MARK: -
@@ -141,9 +140,6 @@ extension TabMenuVC{
         tapRec.numberOfTapsRequired = 1
         self.containerView!.addGestureRecognizer(tapRec)
         
-        tapPan = UIPanGestureRecognizer(target: self, action: #selector(handlePan))
-        self.containerView!.addGestureRecognizer(tapPan)
-        
     }
     
     func tappedView(){
@@ -151,80 +147,6 @@ extension TabMenuVC{
             self.OpenMenuClose(status: .normalClose)
         }
     }
-    
-    func handlePan(gestureRecognizer: UIPanGestureRecognizer) {
-        if(CMenuTabHeight.constant != tabBarHeight){
-            var point :CGFloat = 0
-            
-            if gestureRecognizer.state == .began {
-                // When the drag is first recognized, you can get the starting coordinates here
-                
-                let ranslation = gestureRecognizer.translation(in: self.containerView)
-                point = ranslation.y
-                
-            }
-            
-            if gestureRecognizer.state == .changed {
-                 let velocity = gestureRecognizer.velocity(in: self.containerView)
-                let translation = gestureRecognizer.translation(in: self.containerView)
-                if(velocity.y > 0){
-                if(translation.y>point){
-                    print("[point-- \(point)")
-                    print("[translation-- \(translation.y)")
-                    //let lastpoint = point - translation.y
-                    let viewRatio = self.view.frame.height/296
-                    self.CMenuTabHeight.constant = self.CMenuTabHeight.constant - (translation.y*405/self.containerView.frame.height)
-                    self.view.layoutIfNeeded()
-                }
-                }
-            }
-            
-            
-            if(gestureRecognizer.state == .ended)
-            {
-                
-//                UIView.animate(withDuration: 0.7, delay: 0.0, options: UIViewAnimationOptions.curveEaseInOut, animations: {
-//
-//                    self.CMenuTabHeight.constant = tabBarHeight
-//                    self.containerView.layoutIfNeeded()
-//
-//
-//
-//                }, completion:  {(_) -> Void in
-//
-//                })
-                
-                
-                
-                
-                //            if(self.CtrailTbl.constant >= -100){
-                //
-                //                self.CtrailTbl.constant = 0
-                //                self.view.layoutIfNeeded()
-                //
-                //
-                //
-                //            }
-                //            else{
-                //
-                //                UIView.animate(withDuration: 0.7, delay: 0.0, options: UIViewAnimationOptions.curveEaseInOut, animations: {
-                //
-                //                    self.CtrailTbl.constant = -300
-                //                    self.view.layoutIfNeeded()
-                //
-                //
-                //
-                //                }, completion:  {(_) -> Void in
-                //
-                //                })
-                //
-                //
-                //            }
-            }
-        }
-    }
-    
-    
     
     func OpenMenuClose(status:OnOpenCloseAnimType){
         

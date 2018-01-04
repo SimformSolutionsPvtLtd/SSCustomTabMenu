@@ -8,16 +8,11 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="SFUIDisplay-Black.otf">
-            <string>SFUIDisplay-Black</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--Item-->
         <scene sceneID="sNS-kU-v6l">
             <objects>
-                <viewController storyboardIdentifier="TabMenuVC" automaticallyAdjustsScrollViewInsets="NO" id="zBC-ud-awX" customClass="TabMenuVC" customModule="CutomTapWithBottomMenu" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TabMenuVC" automaticallyAdjustsScrollViewInsets="NO" id="zBC-ud-awX" customClass="TabMenuVC" customModule="SSCustomTabMenu" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Zkq-tO-LYg"/>
                         <viewControllerLayoutGuide type="bottom" id="wGm-xT-bEP"/>
@@ -37,7 +32,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aEN-zm-RAf">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="58"/>
                                         <subviews>
-                                            <button opaque="NO" tag="999" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ag1-s9-67h" customClass="HamburgerView" customModule="CutomTapWithBottomMenu" customModuleProvider="target">
+                                            <button opaque="NO" tag="999" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ag1-s9-67h" customClass="HamburgerView" customModule="SSCustomTabMenu" customModuleProvider="target">
                                                 <rect key="frame" x="20" y="4" width="50" height="50"/>
                                                 <color key="backgroundColor" red="0.1764705882352941" green="0.1764705882352941" blue="0.1764705882352941" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
@@ -190,7 +185,7 @@
                                                     <action selector="didPressMenuItem:" destination="zBC-ud-awX" eventType="touchUpInside" id="VDP-7n-gkT"/>
                                                 </connections>
                                             </button>
-                                            <button hidden="YES" opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f2V-US-aJz" customClass="MenuPopupView" customModule="CutomTapWithBottomMenu" customModuleProvider="target">
+                                            <button hidden="YES" opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f2V-US-aJz" customClass="MenuPopupView" customModule="SSCustomTabMenu" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="146" width="90" height="90"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 <constraints>
@@ -207,7 +202,7 @@
                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="wW2-u0-QXc">
                                                 <rect key="frame" x="0.0" y="30" width="375" height="266"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="CwQ-pt-Vy1" customClass="MenuItemCollectionFlowLayout" customModule="CutomTapWithBottomMenu" customModuleProvider="target">
+                                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="CwQ-pt-Vy1" customClass="MenuItemCollectionFlowLayout" customModule="SSCustomTabMenu" customModuleProvider="target">
                                                     <size key="itemSize" width="116" height="114"/>
                                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -222,7 +217,7 @@
                                                     </userDefinedRuntimeAttributes>
                                                 </collectionViewFlowLayout>
                                                 <cells>
-                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MenuItemsCell" id="ieP-Fq-Mo2" customClass="MenuItemsCell" customModule="CutomTapWithBottomMenu" customModuleProvider="target">
+                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MenuItemsCell" id="ieP-Fq-Mo2" customClass="MenuItemsCell" customModule="SSCustomTabMenu" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="116" height="114"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -234,7 +229,7 @@
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="25" id="fLU-HG-RJq"/>
                                                                     </constraints>
-                                                                    <fontDescription key="fontDescription" name="SFUIDisplay-Black" family="SF UI Display" pointSize="15"/>
+                                                                    <fontDescription key="fontDescription" type="system" weight="black" pointSize="16"/>
                                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>

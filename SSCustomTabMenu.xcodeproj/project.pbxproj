@@ -37,7 +37,6 @@
 		B28D52351F41DB4300DE260C /* ConstraintsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28D52341F41DB4300DE260C /* ConstraintsHelper.swift */; };
 		B28EDDE11FB6D5B7008D46F2 /* MenuItemsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28EDDE01FB6D5B7008D46F2 /* MenuItemsCell.swift */; };
 		B28EDDE31FB6D86E008D46F2 /* MenuItemCollectionFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28EDDE21FB6D86E008D46F2 /* MenuItemCollectionFlowLayout.swift */; };
-		B28EDDE61FB71F31008D46F2 /* SFUIDisplay-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = B28EDDE51FB6FEBB008D46F2 /* SFUIDisplay-Black.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,7 +72,6 @@
 		B28D52341F41DB4300DE260C /* ConstraintsHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintsHelper.swift; sourceTree = "<group>"; };
 		B28EDDE01FB6D5B7008D46F2 /* MenuItemsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemsCell.swift; sourceTree = "<group>"; };
 		B28EDDE21FB6D86E008D46F2 /* MenuItemCollectionFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemCollectionFlowLayout.swift; sourceTree = "<group>"; };
-		B28EDDE51FB6FEBB008D46F2 /* SFUIDisplay-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFUIDisplay-Black.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,7 +167,6 @@
 				B2523FE11FF4FE1300D564C4 /* Combined-Shape-2.png */,
 				B2523FDF1FF4FE1300D564C4 /* Combined-Shape.png */,
 				B25AF4D01FDA98AD00EEB4DA /* 3.png */,
-				B28EDDE51FB6FEBB008D46F2 /* SFUIDisplay-Black.otf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -242,7 +239,6 @@
 				B25AF4D11FDA98CA00EEB4DA /* 3.png in Resources */,
 				B24D9C0C1F3D928100A1D1B7 /* menu.png in Resources */,
 				B24D9C211F3E0BDB00A1D1B7 /* Bitmap.png in Resources */,
-				B28EDDE61FB71F31008D46F2 /* SFUIDisplay-Black.otf in Resources */,
 				B24D9BF91F3D90BC00A1D1B7 /* Assets.xcassets in Resources */,
 				B24D9C0A1F3D925300A1D1B7 /* close.png in Resources */,
 				B2523FE21FF4FE1700D564C4 /* Combined-Shape-2.png in Resources */,

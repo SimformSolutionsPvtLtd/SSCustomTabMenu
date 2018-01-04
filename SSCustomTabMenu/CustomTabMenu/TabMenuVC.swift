@@ -1,6 +1,6 @@
 //
 //  TabMenuVC.swift
-//  CutomTapWithBottomMenu
+//  SSCustomTabMenu
 //
 //  Created by Satish Rajpurohit on 11/08/17.
 //  Copyright © 2017 Satish Rajpurohit. All rights reserved.

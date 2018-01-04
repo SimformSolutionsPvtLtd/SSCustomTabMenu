@@ -42,7 +42,7 @@
 
 /* Begin PBXFileReference section */
 		B200BF451FB43A8000E9352C /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
-		B24D9BEE1F3D90BC00A1D1B7 /* CutomTapWithBottomMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CutomTapWithBottomMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B24D9BEE1F3D90BC00A1D1B7 /* SSCustomTabMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SSCustomTabMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B24D9BF11F3D90BC00A1D1B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B24D9BF31F3D90BC00A1D1B7 /* PlusVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlusVC.swift; sourceTree = "<group>"; };
 		B24D9BF61F3D90BC00A1D1B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -90,7 +90,7 @@
 		B24D9BE51F3D90BC00A1D1B7 = {
 			isa = PBXGroup;
 			children = (
-				B24D9BF01F3D90BC00A1D1B7 /* CutomTapWithBottomMenu */,
+				B24D9BF01F3D90BC00A1D1B7 /* SSCustomTabMenu */,
 				B24D9BEF1F3D90BC00A1D1B7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -98,56 +98,42 @@
 		B24D9BEF1F3D90BC00A1D1B7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B24D9BEE1F3D90BC00A1D1B7 /* CutomTapWithBottomMenu.app */,
+				B24D9BEE1F3D90BC00A1D1B7 /* SSCustomTabMenu.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B24D9BF01F3D90BC00A1D1B7 /* CutomTapWithBottomMenu */ = {
+		B24D9BF01F3D90BC00A1D1B7 /* SSCustomTabMenu */ = {
 			isa = PBXGroup;
 			children = (
-				B24D9C031F3D90CB00A1D1B7 /* TapMenu */,
+				B256EAE71FFE01EA00BE59B3 /* CustomTabMenu */,
 				B24D9BF11F3D90BC00A1D1B7 /* AppDelegate.swift */,
 				B24D9BF31F3D90BC00A1D1B7 /* PlusVC.swift */,
 				B24D9C181F3DB3E300A1D1B7 /* MusicVC.swift */,
 				B24D9C1C1F3DE63400A1D1B7 /* KrewesVC.swift */,
+				B256EAE91FFE026300BE59B3 /* icon */,
 				B24D9BF51F3D90BC00A1D1B7 /* Main.storyboard */,
 				B24D9BF81F3D90BC00A1D1B7 /* Assets.xcassets */,
 				B24D9BFA1F3D90BC00A1D1B7 /* LaunchScreen.storyboard */,
 				B24D9BFD1F3D90BC00A1D1B7 /* Info.plist */,
 			);
-			path = CutomTapWithBottomMenu;
+			path = SSCustomTabMenu;
 			sourceTree = "<group>";
 		};
-		B24D9C031F3D90CB00A1D1B7 /* TapMenu */ = {
+		B256EAE71FFE01EA00BE59B3 /* CustomTabMenu */ = {
 			isa = PBXGroup;
 			children = (
-				B24D9C131F3D94C200A1D1B7 /* Helper */,
-				B24D9C081F3D923E00A1D1B7 /* Icon */,
 				B24D9C041F3D90EC00A1D1B7 /* TabMenu.storyboard */,
 				B24D9C061F3D910100A1D1B7 /* TabMenuVC.swift */,
 				B28EDDE01FB6D5B7008D46F2 /* MenuItemsCell.swift */,
+				B256EAE81FFE022200BE59B3 /* Helper */,
 			);
-			name = TapMenu;
+			path = CustomTabMenu;
 			sourceTree = "<group>";
 		};
-		B24D9C081F3D923E00A1D1B7 /* Icon */ = {
+		B256EAE81FFE022200BE59B3 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
-				B24D9C201F3E0BDB00A1D1B7 /* Bitmap.png */,
-				B24D9C0D1F3D928E00A1D1B7 /* plus.png */,
-				B24D9C0B1F3D928100A1D1B7 /* menu.png */,
-				B24D9C091F3D925300A1D1B7 /* close.png */,
-				B24D9C0F1F3D92C900A1D1B7 /* music.png */,
-				B24D9C111F3D92DA00A1D1B7 /* musicSelected.png */,
-			);
-			name = Icon;
-			sourceTree = "<group>";
-		};
-		B24D9C131F3D94C200A1D1B7 /* Helper */ = {
-			isa = PBXGroup;
-			children = (
-				B28EDDE41FB6FEA1008D46F2 /* Fonts */,
 				B25FED271F50274700938840 /* MenuPopupView.swift */,
 				B2523FDD1FF4F47D00D564C4 /* HamburgerView.swift */,
 				B28D52341F41DB4300DE260C /* ConstraintsHelper.swift */,
@@ -158,8 +144,22 @@
 				B200BF451FB43A8000E9352C /* UIView.swift */,
 				B28EDDE21FB6D86E008D46F2 /* MenuItemCollectionFlowLayout.swift */,
 				B259DF1D1FC965A6000D4154 /* CenteredButton.swift */,
+				B28EDDE41FB6FEA1008D46F2 /* Fonts */,
 			);
-			name = Helper;
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		B256EAE91FFE026300BE59B3 /* icon */ = {
+			isa = PBXGroup;
+			children = (
+				B24D9C201F3E0BDB00A1D1B7 /* Bitmap.png */,
+				B24D9C0D1F3D928E00A1D1B7 /* plus.png */,
+				B24D9C0B1F3D928100A1D1B7 /* menu.png */,
+				B24D9C091F3D925300A1D1B7 /* close.png */,
+				B24D9C0F1F3D92C900A1D1B7 /* music.png */,
+				B24D9C111F3D92DA00A1D1B7 /* musicSelected.png */,
+			);
+			path = icon;
 			sourceTree = "<group>";
 		};
 		B28EDDE41FB6FEA1008D46F2 /* Fonts */ = {
@@ -177,9 +177,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B24D9BED1F3D90BC00A1D1B7 /* CutomTapWithBottomMenu */ = {
+		B24D9BED1F3D90BC00A1D1B7 /* SSCustomTabMenu */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B24D9C001F3D90BC00A1D1B7 /* Build configuration list for PBXNativeTarget "CutomTapWithBottomMenu" */;
+			buildConfigurationList = B24D9C001F3D90BC00A1D1B7 /* Build configuration list for PBXNativeTarget "SSCustomTabMenu" */;
 			buildPhases = (
 				B24D9BEA1F3D90BC00A1D1B7 /* Sources */,
 				B24D9BEB1F3D90BC00A1D1B7 /* Frameworks */,
@@ -189,9 +189,9 @@
 			);
 			dependencies = (
 			);
-			name = CutomTapWithBottomMenu;
+			name = SSCustomTabMenu;
 			productName = CutomTapWithBottomMenu;
-			productReference = B24D9BEE1F3D90BC00A1D1B7 /* CutomTapWithBottomMenu.app */;
+			productReference = B24D9BEE1F3D90BC00A1D1B7 /* SSCustomTabMenu.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -211,7 +211,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B24D9BE91F3D90BC00A1D1B7 /* Build configuration list for PBXProject "CutomTapWithBottomMenu" */;
+			buildConfigurationList = B24D9BE91F3D90BC00A1D1B7 /* Build configuration list for PBXProject "SSCustomTabMenu" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -224,7 +224,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B24D9BED1F3D90BC00A1D1B7 /* CutomTapWithBottomMenu */,
+				B24D9BED1F3D90BC00A1D1B7 /* SSCustomTabMenu */,
 			);
 		};
 /* End PBXProject section */
@@ -398,9 +398,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = Y98X8JAPH6;
-				INFOPLIST_FILE = CutomTapWithBottomMenu/Info.plist;
+				INFOPLIST_FILE = SSCustomTabMenu/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.simform.CutomTapWithBottomMenu;
+				PRODUCT_BUNDLE_IDENTIFIER = com.simform.SSCustomTabMenu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -411,9 +412,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = Y98X8JAPH6;
-				INFOPLIST_FILE = CutomTapWithBottomMenu/Info.plist;
+				INFOPLIST_FILE = SSCustomTabMenu/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.simform.CutomTapWithBottomMenu;
+				PRODUCT_BUNDLE_IDENTIFIER = com.simform.SSCustomTabMenu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -422,7 +424,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B24D9BE91F3D90BC00A1D1B7 /* Build configuration list for PBXProject "CutomTapWithBottomMenu" */ = {
+		B24D9BE91F3D90BC00A1D1B7 /* Build configuration list for PBXProject "SSCustomTabMenu" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B24D9BFE1F3D90BC00A1D1B7 /* Debug */,
@@ -431,7 +433,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B24D9C001F3D90BC00A1D1B7 /* Build configuration list for PBXNativeTarget "CutomTapWithBottomMenu" */ = {
+		B24D9C001F3D90BC00A1D1B7 /* Build configuration list for PBXNativeTarget "SSCustomTabMenu" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B24D9C011F3D90BC00A1D1B7 /* Debug */,

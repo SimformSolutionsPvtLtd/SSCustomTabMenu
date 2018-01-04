@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "B24D9BED1F3D90BC00A1D1B7"
-               BuildableName = "CutomTapWithBottomMenu.app"
-               BlueprintName = "CutomTapWithBottomMenu"
-               ReferencedContainer = "container:CutomTapWithBottomMenu.xcodeproj">
+               BuildableName = "SSCustomTabMenu.app"
+               BlueprintName = "SSCustomTabMenu"
+               ReferencedContainer = "container:SSCustomTabMenu.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -26,6 +26,7 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
@@ -33,9 +34,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B24D9BED1F3D90BC00A1D1B7"
-            BuildableName = "CutomTapWithBottomMenu.app"
-            BlueprintName = "CutomTapWithBottomMenu"
-            ReferencedContainer = "container:CutomTapWithBottomMenu.xcodeproj">
+            BuildableName = "SSCustomTabMenu.app"
+            BlueprintName = "SSCustomTabMenu"
+            ReferencedContainer = "container:SSCustomTabMenu.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -45,6 +46,7 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      language = ""
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"
@@ -56,9 +58,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B24D9BED1F3D90BC00A1D1B7"
-            BuildableName = "CutomTapWithBottomMenu.app"
-            BlueprintName = "CutomTapWithBottomMenu"
-            ReferencedContainer = "container:CutomTapWithBottomMenu.xcodeproj">
+            BuildableName = "SSCustomTabMenu.app"
+            BlueprintName = "SSCustomTabMenu"
+            ReferencedContainer = "container:SSCustomTabMenu.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -75,9 +77,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B24D9BED1F3D90BC00A1D1B7"
-            BuildableName = "CutomTapWithBottomMenu.app"
-            BlueprintName = "CutomTapWithBottomMenu"
-            ReferencedContainer = "container:CutomTapWithBottomMenu.xcodeproj">
+            BuildableName = "SSCustomTabMenu.app"
+            BlueprintName = "SSCustomTabMenu"
+            ReferencedContainer = "container:SSCustomTabMenu.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

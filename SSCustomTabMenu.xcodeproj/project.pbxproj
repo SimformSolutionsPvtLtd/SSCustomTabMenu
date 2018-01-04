@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B200BF461FB43A8000E9352C /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200BF451FB43A8000E9352C /* UIView.swift */; };
+		B208CA361FFE122700B269A3 /* TabMenu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B24D9C041F3D90EC00A1D1B7 /* TabMenu.storyboard */; };
 		B24D9BF21F3D90BC00A1D1B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24D9BF11F3D90BC00A1D1B7 /* AppDelegate.swift */; };
 		B24D9BF41F3D90BC00A1D1B7 /* PlusVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24D9BF31F3D90BC00A1D1B7 /* PlusVC.swift */; };
 		B24D9BF71F3D90BC00A1D1B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B24D9BF51F3D90BC00A1D1B7 /* Main.storyboard */; };
@@ -29,7 +30,6 @@
 		B2523FE21FF4FE1700D564C4 /* Combined-Shape-2.png in Resources */ = {isa = PBXBuildFile; fileRef = B2523FE11FF4FE1300D564C4 /* Combined-Shape-2.png */; };
 		B2523FE31FF4FE1900D564C4 /* Combined-Shape.png in Resources */ = {isa = PBXBuildFile; fileRef = B2523FDF1FF4FE1300D564C4 /* Combined-Shape.png */; };
 		B2523FE41FF4FE1B00D564C4 /* Combined-Shape-1.png in Resources */ = {isa = PBXBuildFile; fileRef = B2523FE01FF4FE1300D564C4 /* Combined-Shape-1.png */; };
-		B256EAEA1FFE0A7000BE59B3 /* TabMenu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B24D9C041F3D90EC00A1D1B7 /* TabMenu.storyboard */; };
 		B25970741FB2F30400CEF360 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25970731FB2F30400CEF360 /* GradientView.swift */; };
 		B259DF1E1FC965A6000D4154 /* CenteredButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B259DF1D1FC965A6000D4154 /* CenteredButton.swift */; };
 		B25AF4D11FDA98CA00EEB4DA /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = B25AF4D01FDA98AD00EEB4DA /* 3.png */; };
@@ -85,6 +85,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B208CA371FFE14D000B269A3 /* SSTabStoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				B24D9C041F3D90EC00A1D1B7 /* TabMenu.storyboard */,
+			);
+			path = SSTabStoryBoard;
+			sourceTree = "<group>";
+		};
 		B24D9BE51F3D90BC00A1D1B7 = {
 			isa = PBXGroup;
 			children = (
@@ -121,8 +129,7 @@
 		B256EAE71FFE01EA00BE59B3 /* CustomTabMenu */ = {
 			isa = PBXGroup;
 			children = (
-				B24D9C061F3D910100A1D1B7 /* TabMenuVC.swift */,
-				B28EDDE01FB6D5B7008D46F2 /* MenuItemsCell.swift */,
+				B208CA371FFE14D000B269A3 /* SSTabStoryBoard */,
 				B256EAE81FFE022200BE59B3 /* Helper */,
 			);
 			path = CustomTabMenu;
@@ -131,6 +138,8 @@
 		B256EAE81FFE022200BE59B3 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				B24D9C061F3D910100A1D1B7 /* TabMenuVC.swift */,
+				B28EDDE01FB6D5B7008D46F2 /* MenuItemsCell.swift */,
 				B25FED271F50274700938840 /* MenuPopupView.swift */,
 				B2523FDD1FF4F47D00D564C4 /* HamburgerView.swift */,
 				B28D52341F41DB4300DE260C /* ConstraintsHelper.swift */,
@@ -162,7 +171,6 @@
 		B28EDDE41FB6FEA1008D46F2 /* image */ = {
 			isa = PBXGroup;
 			children = (
-				B24D9C041F3D90EC00A1D1B7 /* TabMenu.storyboard */,
 				B2523FE01FF4FE1300D564C4 /* Combined-Shape-1.png */,
 				B2523FE11FF4FE1300D564C4 /* Combined-Shape-2.png */,
 				B2523FDF1FF4FE1300D564C4 /* Combined-Shape.png */,
@@ -231,12 +239,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B256EAEA1FFE0A7000BE59B3 /* TabMenu.storyboard in Resources */,
 				B24D9C101F3D92C900A1D1B7 /* music.png in Resources */,
 				B24D9C121F3D92DA00A1D1B7 /* musicSelected.png in Resources */,
 				B2523FE31FF4FE1900D564C4 /* Combined-Shape.png in Resources */,
 				B24D9BFC1F3D90BC00A1D1B7 /* LaunchScreen.storyboard in Resources */,
 				B25AF4D11FDA98CA00EEB4DA /* 3.png in Resources */,
+				B208CA361FFE122700B269A3 /* TabMenu.storyboard in Resources */,
 				B24D9C0C1F3D928100A1D1B7 /* menu.png in Resources */,
 				B24D9C211F3E0BDB00A1D1B7 /* Bitmap.png in Resources */,
 				B24D9BF91F3D90BC00A1D1B7 /* Assets.xcassets in Resources */,

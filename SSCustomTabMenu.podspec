@@ -13,6 +13,6 @@ This CustomTabMenu will add custom menu at bottom!
   s.source           = { :git => 'https://github.com/simformsolutions/SSCustomTabMenu.git', :tag => s.version.to_s }
  
   s.ios.deployment_target = '9.0'
-  s.source_files = 'CustomTabMenu/**/*'
+  s.source_files = 'SSCustomTabMenu/CustomTabMenu/**/*'
  
 end

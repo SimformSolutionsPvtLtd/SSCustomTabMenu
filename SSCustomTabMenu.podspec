@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'SSCustomTabMenu'
-  s.version          = '0.1.1'
+  s.version          = '0.1.2'
   s.summary          = 'Custom tab menu controller for iOS.'
  
   s.description      = 'This CustomTabMenu will add custom menu at bottom!'        

@@ -3,9 +3,7 @@ Pod::Spec.new do |s|
   s.version          = '0.1.0'
   s.summary          = 'Custom tab menu controller for iOS.'
  
-  s.description      = <<-DESC
-This CustomTabMenu will add custom menu at bottom!
-                       DESC
+  s.description      = 'This CustomTabMenu will add custom menu at bottom!'        
  
   s.homepage         = 'https://github.com/simformsolutions/SSCustomTabMenu'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }

@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
  
   s.homepage         = 'https://github.com/simformsolutions/SSCustomTabMenu'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Simform Soutions' => 'rcbrcb13@gmail.com' }
+  s.author           = { 'simformsolutions' => 'reg@simform.in' }
   s.source           = { :git => 'https://github.com/simformsolutions/SSCustomTabMenu.git', :tag => s.version.to_s }
  
   s.ios.deployment_target = '10.0'

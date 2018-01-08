@@ -23,7 +23,7 @@ enum OnOpenCloseAnimType {
     case none
 }
 
-class TabMenuVC: UIViewController,BasicAnimation{
+public class TabMenuVC: UIViewController,BasicAnimation{
     
     // MARK: -
     // MARK: - Variable Declaration
@@ -57,19 +57,19 @@ class TabMenuVC: UIViewController,BasicAnimation{
     // MARK: -
     // MARK: - ViewController Methods
     
-    override func viewDidLoad() {
+    override public func viewDidLoad() {
         super.viewDidLoad()
         tabControllers = [centerTab,RightTab]
         self.Setup()
         // Do any additional setup after loading the view.
     }
     
-    override func didReceiveMemoryWarning() {
+    override public func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-    override func viewDidLayoutSubviews() {
+    override public func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         self.containerView.layer.anchorPoint = CGPoint(x: 0.5, y: 0)
         self.containerView.layer.position = CGPoint(x: self.view.frame.width/2, y:0)
@@ -90,12 +90,12 @@ class TabMenuVC: UIViewController,BasicAnimation{
 }
 
 extension TabMenuVC : UICollectionViewDelegate,UICollectionViewDataSource {
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         //return menuController.count
         return arrMenuItems.count
     }
     
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+    public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let cellMenu = collectionView.dequeueReusableCell(withReuseIdentifier: "MenuItemsCell", for: indexPath) as! MenuItemsCell
         cellMenu.imgMenuIcon.image = UIImage(named: (arrMenuItems[indexPath.row+1]?.imageName)!)
@@ -104,7 +104,7 @@ extension TabMenuVC : UICollectionViewDelegate,UICollectionViewDataSource {
         
     }
     
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+    public func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         self.tabAndMenuSelected(index: indexPath.row,previousType: selectedType,currentType: TypeofSelection.menu)
     }
 }
@@ -281,7 +281,7 @@ extension TabMenuVC{
 var selectedIndex: Int = 0
 var selectedType = TypeofSelection.tab
 
-struct MenuItem {
+public struct MenuItem {
     var viewControllerforMenu: UIViewController
     var imageName: String
     var menuItemTitle: String

@@ -11,13 +11,13 @@ import UIKit
 
 // Custom Gloabl Objects
 
-let storyBoard = Constants.Storyboard.storyBoard
-let appConst = Constants.appconstants
+public let storyBoard = Constants.Storyboard.storyBoard
+public let appConst = Constants.appconstants
 
-let screenSize: CGRect = UIScreen.main.bounds
+public let screenSize: CGRect = UIScreen.main.bounds
 
-@objc
-class Constants: NSObject {
+
+public class Constants: NSObject {
     
     //------------------------------------------
     class var appconstants: Constants {
@@ -29,7 +29,7 @@ class Constants: NSObject {
     
        // MARK: Sub Class - Storyboard
     //********************************************************************************************//
-    class Storyboard: NSObject {
+    public class Storyboard: NSObject {
         
         //------------------------------------------
         class var storyBoard: Storyboard {

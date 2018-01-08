@@ -12,17 +12,10 @@ Pod::Spec.new do |s|
  
   s.ios.deployment_target = '9.0'
  
-
   s.subspec 'CustomTabMenu' do |ss|
  
-  ss.subspec 'Helper' do |h|
- 
-  h.source_files = 'CustomTabMenu/Helper/*.swift'
- end
- ss.subspec 'Helper' do |story|
- story.resource_bundles = {
-    'CustomTabMenu' => ['CustomTabMenu/SSTabStoryBoard/*.storyboard']
-  }
+    ss.subspec 'Helper' do |h|
+      h.source_files = 'SSCustomTabMenu/CustomTabMenu/Helper/*.swift'
+    end
   end 
-  end
 end

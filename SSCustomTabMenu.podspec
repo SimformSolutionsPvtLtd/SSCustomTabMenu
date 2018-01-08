@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'SSCustomTabMenu'
-  s.version          = '0.1.2'
+  s.version          = '0.1.3'
   s.summary          = 'Custom tab menu controller for iOS.'
  
   s.description      = 'This CustomTabMenu will add custom menu at bottom!'        
@@ -14,14 +14,13 @@ Pod::Spec.new do |s|
  
 
   s.subspec 'CustomTabMenu' do |ss|
- 
   ss.subspec 'Helper' do |h|
- 
-  h.source_files = 'SSCustomTabMenu/CustomTabMenu/Helper/*.swift'
+  h.source_files = 'CustomTabMenu/Helper/*.swift'
  end
- ss.subspec 'Helper' do |story|
+
+ s.subspec 'CustomTabMenu' do |story|
  story.resource_bundles = {
-    'SSCustomTabMenu' => ['SSCustomTabMenu/CustomTabMenu/SSTabStoryBoard/*.storyboard']
+    'SSTabStoryBoard' => ['CustomTabMenu/SSTabStoryBoard/*.storyboard']
   }
   end 
   end

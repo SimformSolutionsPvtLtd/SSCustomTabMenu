@@ -11,8 +11,18 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/simformsolutions/SSCustomTabMenu.git', :tag => s.version.to_s }
  
   s.ios.deployment_target = '9.0'
-  s.source_files = 'SSCustomTabMenu/CustomTabMenu/Helper/**/*'
- s.resource_bundles = {
-    'SSCustomTabMenu' => ['SSCustomTabMenu/CustomTabMenu/SSTabStoryBoard/**/*']
+ 
+
+  s.subspec 'CustomTabMenu' do |ss|
+ 
+  ss.subspec 'Helper' do |h|
+ 
+  h.source_files = 'SSCustomTabMenu/CustomTabMenu/Helper/*.swift'
+ end
+ ss.subspec 'Helper' do |story|
+ story.resource_bundles = {
+    'SSCustomTabMenu' => ['SSCustomTabMenu/CustomTabMenu/SSTabStoryBoard/*.storyboard']
   }
+  end 
+  end
 end

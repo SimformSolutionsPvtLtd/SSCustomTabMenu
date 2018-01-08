@@ -10,9 +10,9 @@ import Foundation
 import UIKit
 
 
-class CenteredButton: UIButton
+public class CenteredButton: UIButton
 {
-    override func titleRect(forContentRect contentRect: CGRect) -> CGRect {
+    override public func titleRect(forContentRect contentRect: CGRect) -> CGRect {
         let rect = super.titleRect(forContentRect: contentRect)
         let imageRect = super.imageRect(forContentRect: contentRect)
         
@@ -20,7 +20,7 @@ class CenteredButton: UIButton
                       width: contentRect.width, height: rect.height)//imageRect.maxY + 10
     }
     
-    override func imageRect(forContentRect contentRect: CGRect) -> CGRect {
+    override public func imageRect(forContentRect contentRect: CGRect) -> CGRect {
         let rect = super.imageRect(forContentRect: contentRect)
         let titleRect = self.titleRect(forContentRect: contentRect)
         
@@ -34,7 +34,7 @@ class CenteredButton: UIButton
         centerTitleLabel()
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         centerTitleLabel()
     }

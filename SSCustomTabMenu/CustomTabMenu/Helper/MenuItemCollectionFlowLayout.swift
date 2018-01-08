@@ -8,9 +8,9 @@
 
 import UIKit
 
-class MenuItemCollectionFlowLayout: UICollectionViewFlowLayout {
+public class MenuItemCollectionFlowLayout: UICollectionViewFlowLayout {
     
-    @IBInspectable var numberOfColumns:CGFloat = 3 {
+    @IBInspectable public var numberOfColumns:CGFloat = 3 {
         didSet{
            
         }
@@ -19,11 +19,11 @@ class MenuItemCollectionFlowLayout: UICollectionViewFlowLayout {
     override init() {
         super.init()
     }
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
     
-    override var itemSize: CGSize {
+    override public var itemSize: CGSize {
         set {
         }
         get {

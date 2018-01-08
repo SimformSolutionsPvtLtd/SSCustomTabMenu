@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HamburgerView: UIButton
+public class HamburgerView: UIButton
 {
     // MARK: - Properties
 
@@ -46,7 +46,7 @@ class HamburgerView: UIButton
         self.setupLayers()
     }
 
-    required init?(coder aDecoder: NSCoder)
+    required public init?(coder aDecoder: NSCoder)
     {
         super.init(coder: aDecoder)
         self.setupLayers()

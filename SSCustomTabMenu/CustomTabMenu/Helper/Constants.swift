@@ -32,7 +32,7 @@ public class Constants: NSObject {
     public class Storyboard: NSObject {
         
         //------------------------------------------
-        class var storyBoard: Storyboard {
+       public class var storyBoard: Storyboard {
             struct Singleton {
                 static let instance = Storyboard()
             }
@@ -41,14 +41,14 @@ public class Constants: NSObject {
         
         
         //------------------------------------------
-        var MainStoryboard: UIStoryboard? {
+       public var MainStoryboard: UIStoryboard? {
             get {
                 return UIStoryboard(name: "Main", bundle: nil)
             }
         }
         
         
-        var TabMenuStoryboard: UIStoryboard? {
+       public var TabMenuStoryboard: UIStoryboard? {
             get {
                 return UIStoryboard(name: "TabMenu", bundle: nil)
             }

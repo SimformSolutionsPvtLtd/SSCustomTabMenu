@@ -129,6 +129,7 @@
 		B256EAE71FFE01EA00BE59B3 /* CustomTabMenu */ = {
 			isa = PBXGroup;
 			children = (
+				B28EDDE41FB6FEA1008D46F2 /* image */,
 				B208CA371FFE14D000B269A3 /* SSTabStoryBoard */,
 				B256EAE81FFE022200BE59B3 /* Helper */,
 			);
@@ -150,7 +151,6 @@
 				B200BF451FB43A8000E9352C /* UIView.swift */,
 				B28EDDE21FB6D86E008D46F2 /* MenuItemCollectionFlowLayout.swift */,
 				B259DF1D1FC965A6000D4154 /* CenteredButton.swift */,
-				B28EDDE41FB6FEA1008D46F2 /* image */,
 			);
 			path = Helper;
 			sourceTree = "<group>";

@@ -28,16 +28,15 @@ public class TabMenuVC: UIViewController,BasicAnimation{
     // MARK: -
     // MARK: - Variable Declaration
     
-    var centerTab:UIViewController!
-    var RightTab:UIViewController!
-    var tabControllers: [UIViewController]!
+    public var centerTab:UIViewController!
+    public var RightTab:UIViewController!
+    public var tabControllers: [UIViewController]!
     
-    var totalTabMenuHeight:CGFloat = 296
+    public var totalTabMenuHeight:CGFloat = 296
     fileprivate var backImageView: UIImageView?
-    var arrMenuItems = [Int: MenuItem]()
+    public var arrMenuItems = [Int: MenuItem]()
     let tapRec = UITapGestureRecognizer()
     
-    var userView = UIView()
     // MARK: -
     // MARK: - Outlets
     

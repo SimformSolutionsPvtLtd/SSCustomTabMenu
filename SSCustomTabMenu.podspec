@@ -15,6 +15,6 @@ This CustomTabMenu will add custom menu at bottom!
   s.ios.deployment_target = '9.0'
   s.source_files = 'SSCustomTabMenu/CustomTabMenu/Helper/**/*'
  s.resource_bundles = {
-    'SSCustomTabMenu' => ['SSCustomTabMenu/CustomTabMenu/SSTabStoryBoard/**/*]
+    'SSCustomTabMenu' => ['SSCustomTabMenu/CustomTabMenu/SSTabStoryBoard/**/*']
   }
 end

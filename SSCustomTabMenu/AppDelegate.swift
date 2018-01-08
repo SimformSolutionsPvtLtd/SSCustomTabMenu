@@ -41,12 +41,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         navigationControllerKrewes.navigationBar.setNavigationBarColor(navigationController: navigationControllerKrewes, color: UIColor.black,textColor: UIColor(white:0.55, alpha:1.0))
         
         let tabController = storyBoard.TabMenuStoryboard?.instantiateViewController(withIdentifier: "TabMenuVC") as! TabMenuVC
-        tabController.arrMenuItems[1] = MenuItem(viewControllerforMenu:Krewes!,  imageName: "Home", menuItemTitle: "HOME", viewToAnimate:Krewes!.viewToAnimate)
-        tabController.arrMenuItems[2] = MenuItem(viewControllerforMenu:Krewes!, imageName: "Krews", menuItemTitle: "KREWS", viewToAnimate:Krewes!.viewToAnimate)
-        tabController.arrMenuItems[3] = MenuItem(viewControllerforMenu:Krewes!, imageName: "Profile", menuItemTitle: "PROFILE", viewToAnimate:Krewes!.viewToAnimate)
-        tabController.arrMenuItems[4] = MenuItem(viewControllerforMenu:Krewes!, imageName: "Events", menuItemTitle: "EVENTS", viewToAnimate:Krewes!.viewToAnimate)
-        tabController.arrMenuItems[5] = MenuItem(viewControllerforMenu:Krewes!, imageName: "Artists", menuItemTitle: "ARTISTS", viewToAnimate:nil)
-        tabController.arrMenuItems[6] = MenuItem(viewControllerforMenu:Krewes!, imageName: "FF", menuItemTitle: "FAN FINDER",viewToAnimate:nil)
+        tabController.arrMenuItems[1] = MenuItem(viewControllerforMenu:Krewes!,  imageName: "Home", menuItemTitle: "HOME")
+        tabController.arrMenuItems[2] = MenuItem(viewControllerforMenu:Krewes!, imageName: "Krews", menuItemTitle: "KREWS")
+        tabController.arrMenuItems[3] = MenuItem(viewControllerforMenu:Krewes!, imageName: "Profile", menuItemTitle: "PROFILE")
+        tabController.arrMenuItems[4] = MenuItem(viewControllerforMenu:Krewes!, imageName: "Events", menuItemTitle: "EVENTS")
+        tabController.arrMenuItems[5] = MenuItem(viewControllerforMenu:Krewes!, imageName: "Artists", menuItemTitle: "ARTISTS")
+        tabController.arrMenuItems[6] = MenuItem(viewControllerforMenu:Krewes!, imageName: "FF", menuItemTitle: "FAN FINDER")
         
         tabController.centerTab = plus
         tabController.RightTab = music

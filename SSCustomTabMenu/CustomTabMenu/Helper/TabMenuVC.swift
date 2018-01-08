@@ -285,7 +285,5 @@ struct MenuItem {
     var viewControllerforMenu: UIViewController
     var imageName: String
     var menuItemTitle: String
-    var viewToAnimate: UIView?
-    
 }
 

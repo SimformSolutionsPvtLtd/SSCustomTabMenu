@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.author           = { 'simformsolutions' => 'reg@simform.in' }
   s.source           = { :git => 'https://github.com/simformsolutions/SSCustomTabMenu.git', :tag => s.version.to_s }
  
-  s.ios.deployment_target = '10.0'
+  s.ios.deployment_target = '9.0'
   s.source_files = 'SSCustomTabMenu/CustomTabMenu/Helper/**/*'
  s.resource_bundles = {
     'SSCustomTabMenu' => ['SSCustomTabMenu/CustomTabMenu/SSTabStoryBoard/**/*']

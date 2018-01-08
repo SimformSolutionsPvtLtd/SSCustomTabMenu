@@ -277,7 +277,7 @@ extension TabMenuVC{
 //Global Variables For Tab
 //var menuController: [UIViewController]!
 
-var selectedIndex: Int = 0
+public var selectedIndex: Int = 0
 var selectedType = TypeofSelection.tab
 
 public struct MenuItem {

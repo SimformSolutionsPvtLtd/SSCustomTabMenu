@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
   h.source_files = 'CustomTabMenu/Helper/*.swift'
  end
 
- s.subspec 'CustomTabMenu' do |story|
+ ss.subspec 'SSTabStoryBoard' do |story|
  story.resource_bundles = {
     'SSTabStoryBoard' => ['CustomTabMenu/SSTabStoryBoard/*.storyboard']
   }

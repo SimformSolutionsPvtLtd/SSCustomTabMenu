@@ -62,6 +62,7 @@ extension BasicAnimation {
     }
     
     fileprivate func commanAnimation(_ beginTime:Double,_ from: Any, to: Any, key: String, duration: Double,_ timingFunction:String) -> CABasicAnimation {
+        
         return Init(CABasicAnimation(keyPath: key)) {
             $0.beginTime           = beginTime
             $0.duration            = duration

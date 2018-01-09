@@ -42,18 +42,19 @@ import SSCustomTabMenu
 2. Congratulations!
 
 ## Usage example
+### Into your Appdelegate
 import SSCustomTabMenu
-####  and add below two lines
+### and add below two lines
 let MyDelegate = UIApplication.shared.delegate as! AppDelegate
 var navController:UINavigationController!
 #### Add below code into didFinishLaunchingWithOptions
 
-##### Initiate your controller
+#### Initiate your controller
 let plus = storyBoard.MainStoryboard?.instantiateViewController(withIdentifier: "PlusVC")
 let music = storyBoard.MainStoryboard?.instantiateViewController(withIdentifier: "MusicVC")
-##### Initiate TabMenuVC
+#### Initiate TabMenuVC
 let tabController = storyBoard.TabMenuStoryboard?.instantiateViewController(withIdentifier: "TabMenuVC") as! TabMenuVC
-##### Set Menu Items with Title and image name
+#### Set Menu Items with Title and image name
 
 tabController.arrMenuItems[1] = MenuItem(viewControllerforMenu:Krewes!,  imageName: "Home", menuItemTitle: "HOME")
 tabController.arrMenuItems[2] = MenuItem(viewControllerforMenu:Krewes!, imageName: "Krews", menuItemTitle: "KREWS")
@@ -62,10 +63,10 @@ tabController.arrMenuItems[4] = MenuItem(viewControllerforMenu:Krewes!, imageNam
 tabController.arrMenuItems[5] = MenuItem(viewControllerforMenu:Krewes!, imageName: "Artists", menuItemTitle: "ARTISTS")
 tabController.arrMenuItems[6] = MenuItem(viewControllerforMenu:Krewes!, imageName: "FF", menuItemTitle: "FAN FINDER")
 
-##### Add Center and Right TabBarItem
+#### Add Center and Right TabBarItem
 tabController.centerTab = plus
 tabController.RightTab = music
-##### Add tabController as rootViewController
+#### Add tabController as rootViewController
 MyDelegate.window!.rootViewController = tabController
 
 ## Contribute
@@ -86,5 +87,4 @@ Distributed under the MIT license. See ``LICENSE`` for more information.
 [travis-url]: https://travis-ci.org/dbader/node-datadog-metrics
 [codebeat-image]: https://codebeat.co/badges/c19b47ea-2f9d-45df-8458-b2d952fe9dad
 [codebeat-url]: https://codebeat.co/projects/github-com-vsouza-awesomeios-com
-
 

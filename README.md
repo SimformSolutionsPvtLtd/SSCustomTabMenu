@@ -92,9 +92,9 @@ MyDelegate.window!.rootViewController = tabController
 ```
 
 ## Contribute
-``` swift
-We would love you for the contribution to **SSCustomTabMenu**, check the ``LICENSE`` file for more info.
-```
+
+We would love you for the contribution to SSCustomTabMenu, check the LICENSE file for more info.
+
 ## Meta
 
 Distributed under the MIT license. See ``LICENSE`` for more information.

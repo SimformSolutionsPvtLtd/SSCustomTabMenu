@@ -43,36 +43,54 @@ import SSCustomTabMenu
 
 ## Usage example
 ### Into your Appdelegate
+``` swift
 import SSCustomTabMenu
+```
 ### and add below two lines
+``` swift
 let MyDelegate = UIApplication.shared.delegate as! AppDelegate
 var navController:UINavigationController!
+```
 #### Add below code into didFinishLaunchingWithOptions
 
 #### Initiate your controller
+``` swift
 let plus = storyBoard.MainStoryboard?.instantiateViewController(withIdentifier: "PlusVC")
 let music = storyBoard.MainStoryboard?.instantiateViewController(withIdentifier: "MusicVC")
+```
 #### Initiate TabMenuVC
+``` swift
 let tabController = storyBoard.TabMenuStoryboard?.instantiateViewController(withIdentifier: "TabMenuVC") as! TabMenuVC
+```
 #### Set Menu Items with Title and image name
-
+``` swift
 tabController.arrMenuItems[1] = MenuItem(viewControllerforMenu:Krewes!,  imageName: "Home", menuItemTitle: "HOME")
+
 tabController.arrMenuItems[2] = MenuItem(viewControllerforMenu:Krewes!, imageName: "Krews", menuItemTitle: "KREWS")
+
 tabController.arrMenuItems[3] = MenuItem(viewControllerforMenu:Krewes!, imageName: "Profile", menuItemTitle: "PROFILE")
+
 tabController.arrMenuItems[4] = MenuItem(viewControllerforMenu:Krewes!, imageName: "Events", menuItemTitle: "EVENTS")
+
 tabController.arrMenuItems[5] = MenuItem(viewControllerforMenu:Krewes!, imageName: "Artists", menuItemTitle: "ARTISTS")
+
 tabController.arrMenuItems[6] = MenuItem(viewControllerforMenu:Krewes!, imageName: "FF", menuItemTitle: "FAN FINDER")
 
+```
 #### Add Center and Right TabBarItem
+``` swift
 tabController.centerTab = plus
 tabController.RightTab = music
+```
 #### Add tabController as rootViewController
+``` swift
 MyDelegate.window!.rootViewController = tabController
+```
 
 ## Contribute
-
+``` swift
 We would love you for the contribution to **SSCustomTabMenu**, check the ``LICENSE`` file for more info.
-
+```
 ## Meta
 
 Distributed under the MIT license. See ``LICENSE`` for more information.

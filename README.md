@@ -1,5 +1,5 @@
 # SSCustomTabMenu
-> Simple customizable iOS bottom menu with Tabbar, in Swift.
+> Simple customizable iOS bottom menu works like Tabbar, in Swift.
 
 [![Swift Version][swift-image]][swift-url]
 [![Build Status][travis-image]][travis-url]
@@ -55,8 +55,12 @@ var navController:UINavigationController!
 
 #### Initiate your controller
 ``` swift
-let plus = storyBoard.MainStoryboard?.instantiateViewController(withIdentifier: "PlusVC")
-let music = storyBoard.MainStoryboard?.instantiateViewController(withIdentifier: "MusicVC")
+let HOME = storyBoard.MainStoryboard?.instantiateViewController(withIdentifier: "PlusVC")
+let KREWS = storyBoard.MainStoryboard?.instantiateViewController(withIdentifier: "MusicVC")
+let PROFILE = storyBoard.MainStoryboard?.instantiateViewController(withIdentifier: "PlusVC")
+let EVENTS = storyBoard.MainStoryboard?.instantiateViewController(withIdentifier: "MusicVC")
+let ARTISTS = storyBoard.MainStoryboard?.instantiateViewController(withIdentifier: "PlusVC")
+let FANFINDER = storyBoard.MainStoryboard?.instantiateViewController(withIdentifier: "MusicVC")
 ```
 #### Initiate TabMenuVC
 ``` swift
@@ -64,23 +68,23 @@ let tabController = storyBoard.TabMenuStoryboard?.instantiateViewController(with
 ```
 #### Set Menu Items with Title and image name
 ``` swift
-tabController.arrMenuItems[1] = MenuItem(viewControllerforMenu:Krewes!,  imageName: "Home", menuItemTitle: "HOME")
+tabController.arrMenuItems[1] = MenuItem(viewControllerforMenu:HOME!,  imageName: "Home", menuItemTitle: "HOME")
 
-tabController.arrMenuItems[2] = MenuItem(viewControllerforMenu:Krewes!, imageName: "Krews", menuItemTitle: "KREWS")
+tabController.arrMenuItems[2] = MenuItem(viewControllerforMenu:KREWS!, imageName: "Krews", menuItemTitle: "KREWS")
 
-tabController.arrMenuItems[3] = MenuItem(viewControllerforMenu:Krewes!, imageName: "Profile", menuItemTitle: "PROFILE")
+tabController.arrMenuItems[3] = MenuItem(viewControllerforMenu:PROFILE!, imageName: "Profile", menuItemTitle: "PROFILE")
 
-tabController.arrMenuItems[4] = MenuItem(viewControllerforMenu:Krewes!, imageName: "Events", menuItemTitle: "EVENTS")
+tabController.arrMenuItems[4] = MenuItem(viewControllerforMenu:EVENTS!, imageName: "Events", menuItemTitle: "EVENTS")
 
-tabController.arrMenuItems[5] = MenuItem(viewControllerforMenu:Krewes!, imageName: "Artists", menuItemTitle: "ARTISTS")
+tabController.arrMenuItems[5] = MenuItem(viewControllerforMenu:ARTISTS!, imageName: "Artists", menuItemTitle: "ARTISTS")
 
-tabController.arrMenuItems[6] = MenuItem(viewControllerforMenu:Krewes!, imageName: "FF", menuItemTitle: "FAN FINDER")
+tabController.arrMenuItems[6] = MenuItem(viewControllerforMenu:FANFINDER!, imageName: "FF", menuItemTitle: "FAN FINDER")
 
 ```
 #### Add Center and Right TabBarItem
 ``` swift
-tabController.centerTab = plus
-tabController.RightTab = music
+tabController.centerTab = PROFILE
+tabController.RightTab = ARTISTS
 ```
 #### Add tabController as rootViewController
 ``` swift
@@ -88,9 +92,9 @@ MyDelegate.window!.rootViewController = tabController
 ```
 
 ## Contribute
-``` swift
-We would love you for the contribution to **SSCustomTabMenu**, check the ``LICENSE`` file for more info.
-```
+
+We would love you for the contribution to SSCustomTabMenu, check the LICENSE file for more info.
+
 ## Meta
 
 Distributed under the MIT license. See ``LICENSE`` for more information.
@@ -105,4 +109,3 @@ Distributed under the MIT license. See ``LICENSE`` for more information.
 [travis-url]: https://travis-ci.org/dbader/node-datadog-metrics
 [codebeat-image]: https://codebeat.co/badges/c19b47ea-2f9d-45df-8458-b2d952fe9dad
 [codebeat-url]: https://codebeat.co/projects/github-com-vsouza-awesomeios-com
-

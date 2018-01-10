@@ -5,7 +5,7 @@
 [![Build Status][travis-image]][travis-url]
 [![License][license-image]][license-url]
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
-![Alt text]( https://github.com/simformsolutions/SSCustomTabMenu/raw/master/SSCustomTab.gif)
+![Alt text]( https://github.com/simformsolutions/SSCustomTabMenu/raw/master/customTab.gif)
 ## Features
 
 - [x]  Simple and customizable iOS Tab Menu items, in Swift.

@@ -1,5 +1,5 @@
 {
-  "date": "2018-01-13 13:13:42 +0530",
+  "date": "2018-01-13 13:31:49 +0530",
   "links": [
     "https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square",
     "https://raw.githubusercontent.com/simformsolutions/SSCustomTabMenu/master/customTab.gif?raw=true",
@@ -19,54 +19,38 @@
   ],
   "all": [
     {
+      "url": "https://img.shields.io/badge/swift-3.0-orange.svg",
+      "status": 200,
+      "error": null,
+      "headers": {
+        "date": "Sat, 13 Jan 2018 08:01:47 GMT",
+        "content-type": "image/svg+xml;charset=utf-8",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "set-cookie": "__cfduid=d22224f4744b99508a494155bdbb307df1515830507; expires=Sun, 13-Jan-19 08:01:47 GMT; path=/; domain=.shields.io; HttpOnly",
+        "cache-control": "max-age=86400",
+        "last-modified": "Fri, 12 Jan 2018 15:44:29 GMT",
+        "server": "cloudflare",
+        "cf-ray": "3dc6d4609b471353-LHR"
+      }
+    },
+    {
       "url": "https://cocoapods.org/",
       "status": 200,
       "error": null,
       "headers": {
-        "date": "Sat, 13 Jan 2018 07:43:40 GMT",
+        "date": "Sat, 13 Jan 2018 08:01:47 GMT",
         "content-type": "text/html;charset=utf-8",
         "transfer-encoding": "chunked",
         "connection": "keep-alive",
-        "set-cookie": "__cfduid=d7a62a23fa3d2e1d0fabee1c00c4134c51515829420; expires=Sun, 13-Jan-19 07:43:40 GMT; path=/; domain=.cocoapods.org; HttpOnly",
+        "set-cookie": "__cfduid=da4d2c7edb6211aaf4037d0724a6cfc6f1515830507; expires=Sun, 13-Jan-19 08:01:47 GMT; path=/; domain=.cocoapods.org; HttpOnly",
         "vary": "Accept-Encoding",
         "x-xss-protection": "1; mode=block",
         "x-content-type-options": "nosniff",
         "x-frame-options": "SAMEORIGIN",
         "via": "1.1 vegur",
         "server": "cloudflare",
-        "cf-ray": "3dc6b9d519c2309c-SIN"
-      }
-    },
-    {
-      "url": "https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square",
-      "status": 200,
-      "error": null,
-      "headers": {
-        "date": "Sat, 13 Jan 2018 07:43:40 GMT",
-        "content-type": "image/svg+xml;charset=utf-8",
-        "transfer-encoding": "chunked",
-        "connection": "keep-alive",
-        "set-cookie": "__cfduid=de24500920f7639c9db451be011949dec1515829420; expires=Sun, 13-Jan-19 07:43:40 GMT; path=/; domain=.shields.io; HttpOnly",
-        "cache-control": "max-age=86400",
-        "last-modified": "Fri, 12 Jan 2018 20:18:45 GMT",
-        "server": "cloudflare",
-        "cf-ray": "3dc6b9d68cd0347c-LHR"
-      }
-    },
-    {
-      "url": "https://img.shields.io/travis/dbader/node-datadog-metrics/master.svg?style=flat-square",
-      "status": 200,
-      "error": null,
-      "headers": {
-        "date": "Sat, 13 Jan 2018 07:43:40 GMT",
-        "content-type": "image/svg+xml;charset=utf-8",
-        "transfer-encoding": "chunked",
-        "connection": "keep-alive",
-        "set-cookie": "__cfduid=da758e833b2287049aabad63062bdc02a1515829420; expires=Sun, 13-Jan-19 07:43:40 GMT; path=/; domain=.shields.io; HttpOnly",
-        "cache-control": "no-cache, no-store, must-revalidate",
-        "expires": "Sat, 13 Jan 2018 07:43:40 GMT",
-        "server": "cloudflare",
-        "cf-ray": "3dc6b9d64950139b-LHR"
+        "cf-ray": "3dc6d45f1ba030f6-SIN"
       }
     },
     {
@@ -74,31 +58,47 @@
       "status": 200,
       "error": null,
       "headers": {
-        "date": "Sat, 13 Jan 2018 07:43:40 GMT",
+        "date": "Sat, 13 Jan 2018 08:01:47 GMT",
         "content-type": "image/svg+xml;charset=utf-8",
         "transfer-encoding": "chunked",
         "connection": "keep-alive",
-        "set-cookie": "__cfduid=de24500920f7639c9db451be011949dec1515829420; expires=Sun, 13-Jan-19 07:43:40 GMT; path=/; domain=.shields.io; HttpOnly",
+        "set-cookie": "__cfduid=d63a66097a0bcb8c59c98094ef93510971515830507; expires=Sun, 13-Jan-19 08:01:47 GMT; path=/; domain=.shields.io; HttpOnly",
         "cache-control": "max-age=86400",
-        "last-modified": "Fri, 12 Jan 2018 20:18:45 GMT",
+        "last-modified": "Fri, 12 Jan 2018 15:44:29 GMT",
         "server": "cloudflare",
-        "cf-ray": "3dc6b9d6ed07347c-LHR"
+        "cf-ray": "3dc6d4612eab6b7f-LHR"
       }
     },
     {
-      "url": "https://img.shields.io/badge/swift-3.0-orange.svg",
+      "url": "https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square",
       "status": 200,
       "error": null,
       "headers": {
-        "date": "Sat, 13 Jan 2018 07:43:40 GMT",
+        "date": "Sat, 13 Jan 2018 08:01:48 GMT",
         "content-type": "image/svg+xml;charset=utf-8",
         "transfer-encoding": "chunked",
         "connection": "keep-alive",
-        "set-cookie": "__cfduid=d35d76ef54babf440ee4d5e8d9961149e1515829420; expires=Sun, 13-Jan-19 07:43:40 GMT; path=/; domain=.shields.io; HttpOnly",
+        "set-cookie": "__cfduid=d7d1db07352a0a3dffb9688f9d57394411515830507; expires=Sun, 13-Jan-19 08:01:47 GMT; path=/; domain=.shields.io; HttpOnly",
         "cache-control": "max-age=86400",
         "last-modified": "Fri, 12 Jan 2018 20:18:45 GMT",
         "server": "cloudflare",
-        "cf-ray": "3dc6b9d6ea1608d8-LHR"
+        "cf-ray": "3dc6d460fbd86abb-LHR"
+      }
+    },
+    {
+      "url": "https://img.shields.io/travis/dbader/node-datadog-metrics/master.svg?style=flat-square",
+      "status": 200,
+      "error": null,
+      "headers": {
+        "date": "Sat, 13 Jan 2018 08:01:48 GMT",
+        "content-type": "image/svg+xml;charset=utf-8",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "set-cookie": "__cfduid=ddefbb180d3874bad55de1c204da2412a1515830507; expires=Sun, 13-Jan-19 08:01:47 GMT; path=/; domain=.shields.io; HttpOnly",
+        "cache-control": "no-cache, no-store, must-revalidate",
+        "expires": "Sat, 13 Jan 2018 08:01:47 GMT",
+        "server": "cloudflare",
+        "cf-ray": "3dc6d460da0108d8-LHR"
       }
     },
     {
@@ -109,11 +109,11 @@
         "connection": "close",
         "proxy-connection": "close",
         "via": "HTTP/1.1 localhost (IBM-PROXY-WTE)",
-        "date": "Sat, 13 Jan 2018 07:43:41 GMT",
+        "date": "Sat, 13 Jan 2018 08:01:48 GMT",
         "server": "Apache/2.2.15 (Red Hat)",
         "strict-transport-security": "max-age=15768000; includeSubDomains",
-        "last-modified": "Sat, 13 Jan 2018 07:39:11 GMT",
-        "etag": "\"29a069-1809-562a37a15e5c0\"",
+        "last-modified": "Sat, 13 Jan 2018 07:54:10 GMT",
+        "etag": "\"40de6b-1809-562a3afab8c80\"",
         "accept-ranges": "bytes",
         "content-length": "6153",
         "content-type": "text/html; charset=UTF-8"
@@ -130,12 +130,12 @@
         "strict-transport-security": "max-age=31536000",
         "cache-control": "public, must-revalidate, max-age=0",
         "content-location": "/",
-        "last-modified": "Fri, 12 Jan 2018 09:58:40 GMT",
+        "last-modified": "Fri, 12 Jan 2018 09:58:41 GMT",
         "expires": "0",
         "vary": "Accept,Accept-Encoding",
         "etag": "54d057b66925b99028744088ca25bf8f",
         "content-security-policy-report-only": "default-src 'none'; script-src 'self' https://ssl.google-analytics.com https://djtflbt20bdde.cloudfront.net/ https://js.pusher.com https://cdn.travis-ci.org; font-src 'self' https://fonts.googleapis.com/css https://fonts.gstatic.com; connect-src 'self' ws://ws.pusherapp.com wss://ws.pusherapp.com https://*.pusher.com https://s3.amazonaws.com/archive.travis-ci.com/ https://s3.amazonaws.com/archive.travis-ci.org/ app.getsentry.com https://pnpcptp8xh9k.statuspage.io/ https://ssl.google-analytics.com https://api.travis-ci.org; img-src 'self' data: https://www.gravatar.com http://www.gravatar.com app.getsentry.com https://*.githubusercontent.com https://0.gravatar.com https://ssl.google-analytics.com https://api.travis-ci.org https://cdn.travis-ci.org; style-src 'self' https://fonts.googleapis.com 'unsafe-inline' https://djtflbt20bdde.cloudfront.net https://cdn.travis-ci.org; media-src 'self'; frame-src 'self' https://djtflbt20bdde.cloudfront.net; report-uri https://65f53bfdfd3d7855b8bb3bf31c0d1b7c.report-uri.io/r/default/csp/reportOnly; block-all-mixed-content ; form-action 'self'; frame-ancestors 'none'; object-src https://djtflbt20bdde.cloudfront.net;",
-        "date": "Sat, 13 Jan 2018 07:43:41 GMT",
+        "date": "Sat, 13 Jan 2018 08:01:48 GMT",
         "x-frame-options": "SAMEORIGIN",
         "x-xss-protection": "1; mode=block",
         "x-content-type-options": "nosniff",
@@ -144,37 +144,11 @@
       }
     },
     {
-      "url": "https://github.com/simformsolutions/SSCustomTabMenu",
-      "status": 200,
-      "error": null,
-      "headers": {
-        "date": "Sat, 13 Jan 2018 07:43:41 GMT",
-        "content-type": "text/html; charset=utf-8",
-        "transfer-encoding": "chunked",
-        "server": "GitHub.com",
-        "status": "200 OK",
-        "cache-control": "no-cache",
-        "vary": "X-PJAX, Accept-Encoding",
-        "x-ua-compatible": "IE=Edge,chrome=1",
-        "set-cookie": "logged_in=no; domain=.github.com; path=/; expires=Wed, 13 Jan 2038 07:43:41 -0000; secure; HttpOnly, _gh_sess=eyJzZXNzaW9uX2lkIjoiMGQwMTc5YTA3MjRlY2RjOTkxZmNiMWZiMmQ0OGE5NmIiLCJsYXN0X3JlYWRfZnJvbV9yZXBsaWNhcyI6MTUxNTgyOTQyMTI0NCwic3B5X3JlcG8iOiJzaW1mb3Jtc29sdXRpb25zL1NTQ3VzdG9tVGFiTWVudSIsInNweV9yZXBvX2F0IjoxNTE1ODI5NDIxLCJfY3NyZl90b2tlbiI6InNhWGJQNVhGQWQrbk9LYTRSaVY3d2JESVIycmVmNENFNXExZys2MzV5SFE9IiwiZmxhc2giOnsiZGlzY2FyZCI6WyJhbmFseXRpY3NfbG9jYXRpb24iXSwiZmxhc2hlcyI6eyJhbmFseXRpY3NfbG9jYXRpb24iOiIvPHVzZXItbmFtZT4vPHJlcG8tbmFtZT4ifX19--3deecff8b980a18a5592e111a334a5c0da2bfc39; path=/; secure; HttpOnly",
-        "x-request-id": "dc6caf5b890c13e36fcddc9cf0c8efcb",
-        "x-runtime": "0.175076",
-        "expect-ct": "max-age=2592000, report-uri=\"https://api.github.com/_private/browser/errors\"",
-        "content-security-policy": "default-src 'none'; base-uri 'self'; block-all-mixed-content; child-src render.githubusercontent.com; connect-src 'self' uploads.github.com status.github.com collector.githubapp.com api.github.com www.google-analytics.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com wss://live.github.com; font-src assets-cdn.github.com; form-action 'self' github.com gist.github.com; frame-ancestors 'none'; img-src 'self' data: assets-cdn.github.com identicons.github.com collector.githubapp.com github-cloud.s3.amazonaws.com *.githubusercontent.com; media-src 'none'; script-src assets-cdn.github.com; style-src 'unsafe-inline' assets-cdn.github.com",
-        "strict-transport-security": "max-age=31536000; includeSubdomains; preload",
-        "x-content-type-options": "nosniff",
-        "x-frame-options": "deny",
-        "x-xss-protection": "1; mode=block",
-        "x-runtime-rack": "0.182684",
-        "x-github-request-id": "C565:24BAD:663879:9B32BE:5A59B8AC"
-      }
-    },
-    {
       "url": "https://github.com/simformsolutions",
       "status": 200,
       "error": null,
       "headers": {
-        "date": "Sat, 13 Jan 2018 07:43:41 GMT",
+        "date": "Sat, 13 Jan 2018 08:01:48 GMT",
         "content-type": "text/html; charset=utf-8",
         "transfer-encoding": "chunked",
         "server": "GitHub.com",
@@ -182,17 +156,43 @@
         "cache-control": "no-cache",
         "vary": "X-Requested-With, Accept-Encoding",
         "x-ua-compatible": "IE=Edge,chrome=1",
-        "set-cookie": "logged_in=no; domain=.github.com; path=/; expires=Wed, 13 Jan 2038 07:43:41 -0000; secure; HttpOnly, _gh_sess=eyJzZXNzaW9uX2lkIjoiNWFkYmFmMjdkMzFkMjgxM2M1ZjIzZTAyMzI4M2Q4ZDEiLCJsYXN0X3JlYWRfZnJvbV9yZXBsaWNhcyI6MTUxNTgyOTQyMTM2NCwiX2NzcmZfdG9rZW4iOiJDQkVnSGI3elhEWXFBd21rVmVDY2hLZVJJK0ZNT3ZiY3VmVHFGSVl5cTk0PSJ9--11bd7ba93964e96988672a631519fe8f1441e869; path=/; secure; HttpOnly",
-        "x-request-id": "1352a2db6b400f914ad3ae717a643512",
-        "x-runtime": "0.275176",
+        "set-cookie": "logged_in=no; domain=.github.com; path=/; expires=Wed, 13 Jan 2038 08:01:48 -0000; secure; HttpOnly, _gh_sess=eyJzZXNzaW9uX2lkIjoiNzAyOWRhYzk0NGRhNmMyOGQxNTg5ODA1ZjA1NTlhZWIiLCJsYXN0X3JlYWRfZnJvbV9yZXBsaWNhcyI6MTUxNTgzMDUwODQxMCwiX2NzcmZfdG9rZW4iOiJXT1JpRTFCWE5NZmp1SWFmam8xTUl0aWRpcThmR3ZSNTNkQTRVU3pES0JBPSJ9--59e9a03d021345e814bc5ffdbc9738f822ac061f; path=/; secure; HttpOnly",
+        "x-request-id": "5143bf661e3b348f1321a18347d3c24d",
+        "x-runtime": "0.243456",
         "expect-ct": "max-age=2592000, report-uri=\"https://api.github.com/_private/browser/errors\"",
         "content-security-policy": "default-src 'none'; base-uri 'self'; block-all-mixed-content; child-src render.githubusercontent.com; connect-src 'self' uploads.github.com status.github.com collector.githubapp.com api.github.com www.google-analytics.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com wss://live.github.com; font-src assets-cdn.github.com; form-action 'self' github.com gist.github.com; frame-ancestors 'none'; img-src 'self' data: assets-cdn.github.com identicons.github.com collector.githubapp.com github-cloud.s3.amazonaws.com *.githubusercontent.com; media-src 'none'; script-src assets-cdn.github.com; style-src 'unsafe-inline' assets-cdn.github.com",
         "strict-transport-security": "max-age=31536000; includeSubdomains; preload",
         "x-content-type-options": "nosniff",
         "x-frame-options": "deny",
         "x-xss-protection": "1; mode=block",
-        "x-runtime-rack": "0.282450",
-        "x-github-request-id": "C566:24BA6:E000E:152F5A:5A59B8AC"
+        "x-runtime-rack": "0.251285",
+        "x-github-request-id": "C741:24BAD:6925FD:9FAC92:5A59BCEB"
+      }
+    },
+    {
+      "url": "https://github.com/simformsolutions/SSCustomTabMenu",
+      "status": 200,
+      "error": null,
+      "headers": {
+        "date": "Sat, 13 Jan 2018 08:01:48 GMT",
+        "content-type": "text/html; charset=utf-8",
+        "transfer-encoding": "chunked",
+        "server": "GitHub.com",
+        "status": "200 OK",
+        "cache-control": "no-cache",
+        "vary": "X-PJAX, Accept-Encoding",
+        "x-ua-compatible": "IE=Edge,chrome=1",
+        "set-cookie": "logged_in=no; domain=.github.com; path=/; expires=Wed, 13 Jan 2038 08:01:48 -0000; secure; HttpOnly, _gh_sess=eyJzZXNzaW9uX2lkIjoiNWU5YmJhZmU4OTQ0MTgwOGRiMjQwOGYxOWE3MDAzMTYiLCJsYXN0X3JlYWRfZnJvbV9yZXBsaWNhcyI6MTUxNTgzMDUwODM3Mywic3B5X3JlcG8iOiJzaW1mb3Jtc29sdXRpb25zL1NTQ3VzdG9tVGFiTWVudSIsInNweV9yZXBvX2F0IjoxNTE1ODMwNTA4LCJfY3NyZl90b2tlbiI6IlpvUGxvSCswT081ajg0d0UwUDZGMm1sZGFxaFRGeERJaTg0ODE4c0FmOE09IiwiZmxhc2giOnsiZGlzY2FyZCI6WyJhbmFseXRpY3NfbG9jYXRpb24iXSwiZmxhc2hlcyI6eyJhbmFseXRpY3NfbG9jYXRpb24iOiIvPHVzZXItbmFtZT4vPHJlcG8tbmFtZT4ifX19--43134f029c1a4d327d765e58805f9aceacae3cb9; path=/; secure; HttpOnly",
+        "x-request-id": "fd7659e7bc9a6f7c68bbf2f8224fb525",
+        "x-runtime": "0.152642",
+        "expect-ct": "max-age=2592000, report-uri=\"https://api.github.com/_private/browser/errors\"",
+        "content-security-policy": "default-src 'none'; base-uri 'self'; block-all-mixed-content; child-src render.githubusercontent.com; connect-src 'self' uploads.github.com status.github.com collector.githubapp.com api.github.com www.google-analytics.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com wss://live.github.com; font-src assets-cdn.github.com; form-action 'self' github.com gist.github.com; frame-ancestors 'none'; img-src 'self' data: assets-cdn.github.com identicons.github.com collector.githubapp.com github-cloud.s3.amazonaws.com *.githubusercontent.com; media-src 'none'; script-src assets-cdn.github.com; style-src 'unsafe-inline' assets-cdn.github.com",
+        "strict-transport-security": "max-age=31536000; includeSubdomains; preload",
+        "x-content-type-options": "nosniff",
+        "x-frame-options": "deny",
+        "x-xss-protection": "1; mode=block",
+        "x-runtime-rack": "0.159393",
+        "x-github-request-id": "C740:24BAB:41C5B0:6407DD:5A59BCEB"
       }
     },
     {
@@ -209,21 +209,21 @@
         "content-type": "image/gif",
         "cache-control": "max-age=300",
         "x-geo-block-list": "",
-        "x-github-request-id": "9F9C:CB7B:3F2A55:438B7D:5A59B8AC",
+        "x-github-request-id": "68A8:CB7C:9FD9AE:AA9449:5A59BBF4",
         "content-length": "1564871",
         "accept-ranges": "bytes",
-        "date": "Sat, 13 Jan 2018 07:43:40 GMT",
+        "date": "Sat, 13 Jan 2018 08:01:47 GMT",
         "via": "1.1 varnish",
         "connection": "keep-alive",
-        "x-served-by": "cache-ams4129-AMS",
-        "x-cache": "MISS",
-        "x-cache-hits": "0",
-        "x-timer": "S1515829421.623087,VS0,VE208",
+        "x-served-by": "cache-ams4120-AMS",
+        "x-cache": "HIT",
+        "x-cache-hits": "1",
+        "x-timer": "S1515830508.675966,VS0,VE3",
         "vary": "Authorization,Accept-Encoding",
         "access-control-allow-origin": "*",
-        "x-fastly-request-id": "b297c56794363cad8facc3638fe117524456fce3",
-        "expires": "Sat, 13 Jan 2018 07:48:40 GMT",
-        "source-age": "0"
+        "x-fastly-request-id": "894a8d1f0fd45ea24a31719825723ed59498f1b0",
+        "expires": "Sat, 13 Jan 2018 08:06:47 GMT",
+        "source-age": "247"
       }
     },
     {
@@ -232,7 +232,7 @@
       "error": null,
       "headers": {
         "server": "Cowboy",
-        "date": "Sat, 13 Jan 2018 07:43:41 GMT",
+        "date": "Sat, 13 Jan 2018 08:01:49 GMT",
         "connection": "keep-alive",
         "last-modified": "Thu, 04 Jan 2018 15:54:20 GMT",
         "content-type": "image/svg+xml",
@@ -249,17 +249,17 @@
       "error": null,
       "headers": {
         "server": "Cowboy",
-        "date": "Sat, 13 Jan 2018 07:43:42 GMT",
+        "date": "Sat, 13 Jan 2018 08:01:48 GMT",
         "connection": "keep-alive",
         "x-frame-options": "SAMEORIGIN",
         "x-xss-protection": "1; mode=block",
         "x-content-type-options": "nosniff",
         "content-type": "text/html; charset=utf-8",
-        "etag": "W/\"188ca09a44553b793096853d993facee\"",
+        "etag": "W/\"3c1681ef970ea1b603432df4484526eb\"",
         "cache-control": "max-age=0, private, must-revalidate",
-        "set-cookie": "_session_id=9a9aa698a1653390a598cd9722358c0c; path=/; secure; HttpOnly",
-        "x-request-id": "e3f90cc2-2bb5-4ec0-9228-6720eaec409f",
-        "x-runtime": "0.093666",
+        "set-cookie": "_session_id=2c0631e4b0337371c3c151c768aca6df; path=/; secure; HttpOnly",
+        "x-request-id": "e0d20650-a7c4-4e67-bd09-21078982fa05",
+        "x-runtime": "0.113397",
         "vary": "Accept-Encoding",
         "strict-transport-security": "max-age=15552000; includeSubDomains",
         "transfer-encoding": "chunked",

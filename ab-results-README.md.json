@@ -1,9 +1,9 @@
 {
-  "date": "2018-01-13 13:08:28 +0530",
+  "date": "2018-01-13 13:13:42 +0530",
   "links": [
     "https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square",
-    "https://raw.githubusercontent.com/simformsolutions/SSCustomTabMenu/master/SSCustomTab.gif?raw=true",
-    "http://cocoapods.org/",
+    "https://raw.githubusercontent.com/simformsolutions/SSCustomTabMenu/master/customTab.gif?raw=true",
+    "https://cocoapods.org/",
     "https://github.com/simformsolutions/SSCustomTabMenu",
     "https://github.com/simformsolutions",
     "https://img.shields.io/badge/swift-3.0-orange.svg",
@@ -15,70 +15,26 @@
     "https://codebeat.co/projects/github-com-vsouza-awesomeios-com"
   ],
   "issues": [
-    {
-      "url": "http://cocoapods.org/",
-      "status": 301,
-      "error": null,
-      "headers": {
-        "date": "Sat, 13 Jan 2018 07:38:25 GMT",
-        "transfer-encoding": "chunked",
-        "connection": "keep-alive",
-        "cache-control": "max-age=3600",
-        "expires": "Sat, 13 Jan 2018 08:38:25 GMT",
-        "location": "https://cocoapods.org/",
-        "server": "cloudflare",
-        "cf-ray": "3dc6b22640193210-SIN"
-      },
-      "loc": 23
-    }
+
   ],
   "all": [
     {
-      "url": "http://cocoapods.org/",
-      "status": 301,
-      "error": null,
-      "headers": {
-        "date": "Sat, 13 Jan 2018 07:38:25 GMT",
-        "transfer-encoding": "chunked",
-        "connection": "keep-alive",
-        "cache-control": "max-age=3600",
-        "expires": "Sat, 13 Jan 2018 08:38:25 GMT",
-        "location": "https://cocoapods.org/",
-        "server": "cloudflare",
-        "cf-ray": "3dc6b22640193210-SIN"
-      },
-      "loc": 23
-    },
-    {
-      "url": "https://img.shields.io/badge/swift-3.0-orange.svg",
+      "url": "https://cocoapods.org/",
       "status": 200,
       "error": null,
       "headers": {
-        "date": "Sat, 13 Jan 2018 07:38:26 GMT",
-        "content-type": "image/svg+xml;charset=utf-8",
+        "date": "Sat, 13 Jan 2018 07:43:40 GMT",
+        "content-type": "text/html;charset=utf-8",
         "transfer-encoding": "chunked",
         "connection": "keep-alive",
-        "set-cookie": "__cfduid=d4a368966b339410ccaa8c88601684e8a1515829106; expires=Sun, 13-Jan-19 07:38:26 GMT; path=/; domain=.shields.io; HttpOnly",
-        "cache-control": "max-age=86400",
-        "last-modified": "Fri, 12 Jan 2018 15:44:29 GMT",
+        "set-cookie": "__cfduid=d7a62a23fa3d2e1d0fabee1c00c4134c51515829420; expires=Sun, 13-Jan-19 07:43:40 GMT; path=/; domain=.cocoapods.org; HttpOnly",
+        "vary": "Accept-Encoding",
+        "x-xss-protection": "1; mode=block",
+        "x-content-type-options": "nosniff",
+        "x-frame-options": "SAMEORIGIN",
+        "via": "1.1 vegur",
         "server": "cloudflare",
-        "cf-ray": "3dc6b228980634c4-LHR"
-      }
-    },
-    {
-      "url": "https://img.shields.io/badge/License-MIT-blue.svg",
-      "status": 200,
-      "error": null,
-      "headers": {
-        "date": "Sat, 13 Jan 2018 07:38:26 GMT",
-        "content-type": "image/svg+xml;charset=utf-8",
-        "transfer-encoding": "chunked",
-        "connection": "keep-alive",
-        "set-cookie": "__cfduid=da1f80e167295a7bdd2931d57c5c418051515829106; expires=Sun, 13-Jan-19 07:38:26 GMT; path=/; domain=.shields.io; HttpOnly",
-        "cache-control": "max-age=86400",
-        "last-modified": "Sat, 13 Jan 2018 07:00:46 GMT",
-        "server": "cloudflare",
-        "cf-ray": "3dc6b22889e56a37-LHR"
+        "cf-ray": "3dc6b9d519c2309c-SIN"
       }
     },
     {
@@ -86,15 +42,15 @@
       "status": 200,
       "error": null,
       "headers": {
-        "date": "Sat, 13 Jan 2018 07:38:26 GMT",
+        "date": "Sat, 13 Jan 2018 07:43:40 GMT",
         "content-type": "image/svg+xml;charset=utf-8",
         "transfer-encoding": "chunked",
         "connection": "keep-alive",
-        "set-cookie": "__cfduid=d7ec4eff2705a3bc4a8834f62fabd654e1515829106; expires=Sun, 13-Jan-19 07:38:26 GMT; path=/; domain=.shields.io; HttpOnly",
+        "set-cookie": "__cfduid=de24500920f7639c9db451be011949dec1515829420; expires=Sun, 13-Jan-19 07:43:40 GMT; path=/; domain=.shields.io; HttpOnly",
         "cache-control": "max-age=86400",
         "last-modified": "Fri, 12 Jan 2018 20:18:45 GMT",
         "server": "cloudflare",
-        "cf-ray": "3dc6b2287bbb35b4-LHR"
+        "cf-ray": "3dc6b9d68cd0347c-LHR"
       }
     },
     {
@@ -102,15 +58,47 @@
       "status": 200,
       "error": null,
       "headers": {
-        "date": "Sat, 13 Jan 2018 07:38:26 GMT",
+        "date": "Sat, 13 Jan 2018 07:43:40 GMT",
         "content-type": "image/svg+xml;charset=utf-8",
         "transfer-encoding": "chunked",
         "connection": "keep-alive",
-        "set-cookie": "__cfduid=dfb881d58872d9b12bbfb2bdc1ccc3b7e1515829105; expires=Sun, 13-Jan-19 07:38:25 GMT; path=/; domain=.shields.io; HttpOnly",
+        "set-cookie": "__cfduid=da758e833b2287049aabad63062bdc02a1515829420; expires=Sun, 13-Jan-19 07:43:40 GMT; path=/; domain=.shields.io; HttpOnly",
         "cache-control": "no-cache, no-store, must-revalidate",
-        "expires": "Sat, 13 Jan 2018 07:38:26 GMT",
+        "expires": "Sat, 13 Jan 2018 07:43:40 GMT",
         "server": "cloudflare",
-        "cf-ray": "3dc6b2286ff334c4-LHR"
+        "cf-ray": "3dc6b9d64950139b-LHR"
+      }
+    },
+    {
+      "url": "https://img.shields.io/badge/License-MIT-blue.svg",
+      "status": 200,
+      "error": null,
+      "headers": {
+        "date": "Sat, 13 Jan 2018 07:43:40 GMT",
+        "content-type": "image/svg+xml;charset=utf-8",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "set-cookie": "__cfduid=de24500920f7639c9db451be011949dec1515829420; expires=Sun, 13-Jan-19 07:43:40 GMT; path=/; domain=.shields.io; HttpOnly",
+        "cache-control": "max-age=86400",
+        "last-modified": "Fri, 12 Jan 2018 20:18:45 GMT",
+        "server": "cloudflare",
+        "cf-ray": "3dc6b9d6ed07347c-LHR"
+      }
+    },
+    {
+      "url": "https://img.shields.io/badge/swift-3.0-orange.svg",
+      "status": 200,
+      "error": null,
+      "headers": {
+        "date": "Sat, 13 Jan 2018 07:43:40 GMT",
+        "content-type": "image/svg+xml;charset=utf-8",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "set-cookie": "__cfduid=d35d76ef54babf440ee4d5e8d9961149e1515829420; expires=Sun, 13-Jan-19 07:43:40 GMT; path=/; domain=.shields.io; HttpOnly",
+        "cache-control": "max-age=86400",
+        "last-modified": "Fri, 12 Jan 2018 20:18:45 GMT",
+        "server": "cloudflare",
+        "cf-ray": "3dc6b9d6ea1608d8-LHR"
       }
     },
     {
@@ -121,11 +109,11 @@
         "connection": "close",
         "proxy-connection": "close",
         "via": "HTTP/1.1 localhost (IBM-PROXY-WTE)",
-        "date": "Sat, 13 Jan 2018 07:38:26 GMT",
+        "date": "Sat, 13 Jan 2018 07:43:41 GMT",
         "server": "Apache/2.2.15 (Red Hat)",
         "strict-transport-security": "max-age=15768000; includeSubDomains",
-        "last-modified": "Sat, 13 Jan 2018 07:24:09 GMT",
-        "etag": "\"7426b1-1809-562a344527840\"",
+        "last-modified": "Sat, 13 Jan 2018 07:39:11 GMT",
+        "etag": "\"29a069-1809-562a37a15e5c0\"",
         "accept-ranges": "bytes",
         "content-length": "6153",
         "content-type": "text/html; charset=UTF-8"
@@ -142,12 +130,12 @@
         "strict-transport-security": "max-age=31536000",
         "cache-control": "public, must-revalidate, max-age=0",
         "content-location": "/",
-        "last-modified": "Fri, 12 Jan 2018 09:58:41 GMT",
+        "last-modified": "Fri, 12 Jan 2018 09:58:40 GMT",
         "expires": "0",
         "vary": "Accept,Accept-Encoding",
         "etag": "54d057b66925b99028744088ca25bf8f",
         "content-security-policy-report-only": "default-src 'none'; script-src 'self' https://ssl.google-analytics.com https://djtflbt20bdde.cloudfront.net/ https://js.pusher.com https://cdn.travis-ci.org; font-src 'self' https://fonts.googleapis.com/css https://fonts.gstatic.com; connect-src 'self' ws://ws.pusherapp.com wss://ws.pusherapp.com https://*.pusher.com https://s3.amazonaws.com/archive.travis-ci.com/ https://s3.amazonaws.com/archive.travis-ci.org/ app.getsentry.com https://pnpcptp8xh9k.statuspage.io/ https://ssl.google-analytics.com https://api.travis-ci.org; img-src 'self' data: https://www.gravatar.com http://www.gravatar.com app.getsentry.com https://*.githubusercontent.com https://0.gravatar.com https://ssl.google-analytics.com https://api.travis-ci.org https://cdn.travis-ci.org; style-src 'self' https://fonts.googleapis.com 'unsafe-inline' https://djtflbt20bdde.cloudfront.net https://cdn.travis-ci.org; media-src 'self'; frame-src 'self' https://djtflbt20bdde.cloudfront.net; report-uri https://65f53bfdfd3d7855b8bb3bf31c0d1b7c.report-uri.io/r/default/csp/reportOnly; block-all-mixed-content ; form-action 'self'; frame-ancestors 'none'; object-src https://djtflbt20bdde.cloudfront.net;",
-        "date": "Sat, 13 Jan 2018 07:38:26 GMT",
+        "date": "Sat, 13 Jan 2018 07:43:41 GMT",
         "x-frame-options": "SAMEORIGIN",
         "x-xss-protection": "1; mode=block",
         "x-content-type-options": "nosniff",
@@ -156,12 +144,95 @@
       }
     },
     {
+      "url": "https://github.com/simformsolutions/SSCustomTabMenu",
+      "status": 200,
+      "error": null,
+      "headers": {
+        "date": "Sat, 13 Jan 2018 07:43:41 GMT",
+        "content-type": "text/html; charset=utf-8",
+        "transfer-encoding": "chunked",
+        "server": "GitHub.com",
+        "status": "200 OK",
+        "cache-control": "no-cache",
+        "vary": "X-PJAX, Accept-Encoding",
+        "x-ua-compatible": "IE=Edge,chrome=1",
+        "set-cookie": "logged_in=no; domain=.github.com; path=/; expires=Wed, 13 Jan 2038 07:43:41 -0000; secure; HttpOnly, _gh_sess=eyJzZXNzaW9uX2lkIjoiMGQwMTc5YTA3MjRlY2RjOTkxZmNiMWZiMmQ0OGE5NmIiLCJsYXN0X3JlYWRfZnJvbV9yZXBsaWNhcyI6MTUxNTgyOTQyMTI0NCwic3B5X3JlcG8iOiJzaW1mb3Jtc29sdXRpb25zL1NTQ3VzdG9tVGFiTWVudSIsInNweV9yZXBvX2F0IjoxNTE1ODI5NDIxLCJfY3NyZl90b2tlbiI6InNhWGJQNVhGQWQrbk9LYTRSaVY3d2JESVIycmVmNENFNXExZys2MzV5SFE9IiwiZmxhc2giOnsiZGlzY2FyZCI6WyJhbmFseXRpY3NfbG9jYXRpb24iXSwiZmxhc2hlcyI6eyJhbmFseXRpY3NfbG9jYXRpb24iOiIvPHVzZXItbmFtZT4vPHJlcG8tbmFtZT4ifX19--3deecff8b980a18a5592e111a334a5c0da2bfc39; path=/; secure; HttpOnly",
+        "x-request-id": "dc6caf5b890c13e36fcddc9cf0c8efcb",
+        "x-runtime": "0.175076",
+        "expect-ct": "max-age=2592000, report-uri=\"https://api.github.com/_private/browser/errors\"",
+        "content-security-policy": "default-src 'none'; base-uri 'self'; block-all-mixed-content; child-src render.githubusercontent.com; connect-src 'self' uploads.github.com status.github.com collector.githubapp.com api.github.com www.google-analytics.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com wss://live.github.com; font-src assets-cdn.github.com; form-action 'self' github.com gist.github.com; frame-ancestors 'none'; img-src 'self' data: assets-cdn.github.com identicons.github.com collector.githubapp.com github-cloud.s3.amazonaws.com *.githubusercontent.com; media-src 'none'; script-src assets-cdn.github.com; style-src 'unsafe-inline' assets-cdn.github.com",
+        "strict-transport-security": "max-age=31536000; includeSubdomains; preload",
+        "x-content-type-options": "nosniff",
+        "x-frame-options": "deny",
+        "x-xss-protection": "1; mode=block",
+        "x-runtime-rack": "0.182684",
+        "x-github-request-id": "C565:24BAD:663879:9B32BE:5A59B8AC"
+      }
+    },
+    {
+      "url": "https://github.com/simformsolutions",
+      "status": 200,
+      "error": null,
+      "headers": {
+        "date": "Sat, 13 Jan 2018 07:43:41 GMT",
+        "content-type": "text/html; charset=utf-8",
+        "transfer-encoding": "chunked",
+        "server": "GitHub.com",
+        "status": "200 OK",
+        "cache-control": "no-cache",
+        "vary": "X-Requested-With, Accept-Encoding",
+        "x-ua-compatible": "IE=Edge,chrome=1",
+        "set-cookie": "logged_in=no; domain=.github.com; path=/; expires=Wed, 13 Jan 2038 07:43:41 -0000; secure; HttpOnly, _gh_sess=eyJzZXNzaW9uX2lkIjoiNWFkYmFmMjdkMzFkMjgxM2M1ZjIzZTAyMzI4M2Q4ZDEiLCJsYXN0X3JlYWRfZnJvbV9yZXBsaWNhcyI6MTUxNTgyOTQyMTM2NCwiX2NzcmZfdG9rZW4iOiJDQkVnSGI3elhEWXFBd21rVmVDY2hLZVJJK0ZNT3ZiY3VmVHFGSVl5cTk0PSJ9--11bd7ba93964e96988672a631519fe8f1441e869; path=/; secure; HttpOnly",
+        "x-request-id": "1352a2db6b400f914ad3ae717a643512",
+        "x-runtime": "0.275176",
+        "expect-ct": "max-age=2592000, report-uri=\"https://api.github.com/_private/browser/errors\"",
+        "content-security-policy": "default-src 'none'; base-uri 'self'; block-all-mixed-content; child-src render.githubusercontent.com; connect-src 'self' uploads.github.com status.github.com collector.githubapp.com api.github.com www.google-analytics.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com wss://live.github.com; font-src assets-cdn.github.com; form-action 'self' github.com gist.github.com; frame-ancestors 'none'; img-src 'self' data: assets-cdn.github.com identicons.github.com collector.githubapp.com github-cloud.s3.amazonaws.com *.githubusercontent.com; media-src 'none'; script-src assets-cdn.github.com; style-src 'unsafe-inline' assets-cdn.github.com",
+        "strict-transport-security": "max-age=31536000; includeSubdomains; preload",
+        "x-content-type-options": "nosniff",
+        "x-frame-options": "deny",
+        "x-xss-protection": "1; mode=block",
+        "x-runtime-rack": "0.282450",
+        "x-github-request-id": "C566:24BA6:E000E:152F5A:5A59B8AC"
+      }
+    },
+    {
+      "url": "https://raw.githubusercontent.com/simformsolutions/SSCustomTabMenu/master/customTab.gif?raw=true",
+      "status": 200,
+      "error": null,
+      "headers": {
+        "content-security-policy": "default-src 'none'; style-src 'unsafe-inline'; sandbox",
+        "strict-transport-security": "max-age=31536000",
+        "x-content-type-options": "nosniff",
+        "x-frame-options": "deny",
+        "x-xss-protection": "1; mode=block",
+        "etag": "\"c0f9c8fd062b9ed2d3dcf77ba17826d97741e523\"",
+        "content-type": "image/gif",
+        "cache-control": "max-age=300",
+        "x-geo-block-list": "",
+        "x-github-request-id": "9F9C:CB7B:3F2A55:438B7D:5A59B8AC",
+        "content-length": "1564871",
+        "accept-ranges": "bytes",
+        "date": "Sat, 13 Jan 2018 07:43:40 GMT",
+        "via": "1.1 varnish",
+        "connection": "keep-alive",
+        "x-served-by": "cache-ams4129-AMS",
+        "x-cache": "MISS",
+        "x-cache-hits": "0",
+        "x-timer": "S1515829421.623087,VS0,VE208",
+        "vary": "Authorization,Accept-Encoding",
+        "access-control-allow-origin": "*",
+        "x-fastly-request-id": "b297c56794363cad8facc3638fe117524456fce3",
+        "expires": "Sat, 13 Jan 2018 07:48:40 GMT",
+        "source-age": "0"
+      }
+    },
+    {
       "url": "https://codebeat.co/assets/svg/badges/C-ffb83f-7198e9a1b7ad7f73977b0c9a5c7c3fffbfa25f262510e5681fd8f5a3188216b0.svg",
       "status": 200,
       "error": null,
       "headers": {
         "server": "Cowboy",
-        "date": "Sat, 13 Jan 2018 07:38:26 GMT",
+        "date": "Sat, 13 Jan 2018 07:43:41 GMT",
         "connection": "keep-alive",
         "last-modified": "Thu, 04 Jan 2018 15:54:20 GMT",
         "content-type": "image/svg+xml",
@@ -173,108 +244,26 @@
       }
     },
     {
-      "url": "https://github.com/simformsolutions",
-      "status": 200,
-      "error": null,
-      "headers": {
-        "date": "Sat, 13 Jan 2018 07:38:26 GMT",
-        "content-type": "text/html; charset=utf-8",
-        "transfer-encoding": "chunked",
-        "server": "GitHub.com",
-        "status": "200 OK",
-        "cache-control": "no-cache",
-        "vary": "X-Requested-With, Accept-Encoding",
-        "x-ua-compatible": "IE=Edge,chrome=1",
-        "set-cookie": "logged_in=no; domain=.github.com; path=/; expires=Wed, 13 Jan 2038 07:38:26 -0000; secure; HttpOnly, _gh_sess=eyJzZXNzaW9uX2lkIjoiY2U5MDZiNDE0MWFjYTNiMDgxZTcyYTVjMWI0OTA3YWIiLCJsYXN0X3JlYWRfZnJvbV9yZXBsaWNhcyI6MTUxNTgyOTEwNjc0OSwiX2NzcmZfdG9rZW4iOiJEODJkUkgrOEJkWmIzVnlCUU94UktIdWZVU0l2WjBRRmE1TlNsU2hnUUJBPSJ9--25001c4bf2049ee4cf3ac9b147787fa63b3c8386; path=/; secure; HttpOnly",
-        "x-request-id": "4fa0a625405805192abeab5168b81ae5",
-        "x-runtime": "0.237172",
-        "expect-ct": "max-age=2592000, report-uri=\"https://api.github.com/_private/browser/errors\"",
-        "content-security-policy": "default-src 'none'; base-uri 'self'; block-all-mixed-content; child-src render.githubusercontent.com; connect-src 'self' uploads.github.com status.github.com collector.githubapp.com api.github.com www.google-analytics.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com wss://live.github.com; font-src assets-cdn.github.com; form-action 'self' github.com gist.github.com; frame-ancestors 'none'; img-src 'self' data: assets-cdn.github.com identicons.github.com collector.githubapp.com github-cloud.s3.amazonaws.com *.githubusercontent.com; media-src 'none'; script-src assets-cdn.github.com; style-src 'unsafe-inline' assets-cdn.github.com",
-        "strict-transport-security": "max-age=31536000; includeSubdomains; preload",
-        "x-content-type-options": "nosniff",
-        "x-frame-options": "deny",
-        "x-xss-protection": "1; mode=block",
-        "x-runtime-rack": "0.244566",
-        "x-github-request-id": "C465:24BAF:1991FE:2F5E2D:5A59B771"
-      }
-    },
-    {
-      "url": "https://github.com/simformsolutions/SSCustomTabMenu",
-      "status": 200,
-      "error": null,
-      "headers": {
-        "date": "Sat, 13 Jan 2018 07:38:27 GMT",
-        "content-type": "text/html; charset=utf-8",
-        "transfer-encoding": "chunked",
-        "server": "GitHub.com",
-        "status": "200 OK",
-        "cache-control": "no-cache",
-        "vary": "X-PJAX, Accept-Encoding",
-        "x-ua-compatible": "IE=Edge,chrome=1",
-        "set-cookie": "logged_in=no; domain=.github.com; path=/; expires=Wed, 13 Jan 2038 07:38:26 -0000; secure; HttpOnly, _gh_sess=eyJzZXNzaW9uX2lkIjoiMmJiNTVhYWM0YmNiZjlkNzUzZjMwODliMzY4ODNiMmYiLCJsYXN0X3JlYWRfZnJvbV9yZXBsaWNhcyI6MTUxNTgyOTEwNjk2Mywic3B5X3JlcG8iOiJzaW1mb3Jtc29sdXRpb25zL1NTQ3VzdG9tVGFiTWVudSIsInNweV9yZXBvX2F0IjoxNTE1ODI5MTA2LCJfY3NyZl90b2tlbiI6IkNYUGtTVXhkTFBBSU1jcXZCTkkreVp5b2VpanBpTm91ckFOcDNMeDNyWkk9IiwiZmxhc2giOnsiZGlzY2FyZCI6WyJhbmFseXRpY3NfbG9jYXRpb24iXSwiZmxhc2hlcyI6eyJhbmFseXRpY3NfbG9jYXRpb24iOiIvPHVzZXItbmFtZT4vPHJlcG8tbmFtZT4ifX19--8f36156762a9c59fc84b51da4e0f3650f1b130c1; path=/; secure; HttpOnly",
-        "x-request-id": "3eb9e48b9e90289278ded9bdaaff6cbb",
-        "x-runtime": "0.226312",
-        "expect-ct": "max-age=2592000, report-uri=\"https://api.github.com/_private/browser/errors\"",
-        "content-security-policy": "default-src 'none'; base-uri 'self'; block-all-mixed-content; child-src render.githubusercontent.com; connect-src 'self' uploads.github.com status.github.com collector.githubapp.com api.github.com www.google-analytics.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com wss://live.github.com; font-src assets-cdn.github.com; form-action 'self' github.com gist.github.com; frame-ancestors 'none'; img-src 'self' data: assets-cdn.github.com identicons.github.com collector.githubapp.com github-cloud.s3.amazonaws.com *.githubusercontent.com; media-src 'none'; script-src assets-cdn.github.com; style-src 'unsafe-inline' assets-cdn.github.com",
-        "strict-transport-security": "max-age=31536000; includeSubdomains; preload",
-        "x-content-type-options": "nosniff",
-        "x-frame-options": "deny",
-        "x-xss-protection": "1; mode=block",
-        "x-runtime-rack": "0.232304",
-        "x-github-request-id": "C466:24BA8:21621F:32C007:5A59B772"
-      }
-    },
-    {
       "url": "https://codebeat.co/projects/github-com-vsouza-awesomeios-com",
       "status": 200,
       "error": null,
       "headers": {
         "server": "Cowboy",
-        "date": "Sat, 13 Jan 2018 07:38:26 GMT",
+        "date": "Sat, 13 Jan 2018 07:43:42 GMT",
         "connection": "keep-alive",
         "x-frame-options": "SAMEORIGIN",
         "x-xss-protection": "1; mode=block",
         "x-content-type-options": "nosniff",
         "content-type": "text/html; charset=utf-8",
-        "etag": "W/\"2f06b1da2ede413b6a1f5049e6dca4c8\"",
+        "etag": "W/\"188ca09a44553b793096853d993facee\"",
         "cache-control": "max-age=0, private, must-revalidate",
-        "set-cookie": "_session_id=75ae6d8a8f9f37b12be71280b6cc1975; path=/; secure; HttpOnly",
-        "x-request-id": "eafbf420-6c35-4b40-9f1c-f0769bc0bdd3",
-        "x-runtime": "0.219773",
+        "set-cookie": "_session_id=9a9aa698a1653390a598cd9722358c0c; path=/; secure; HttpOnly",
+        "x-request-id": "e3f90cc2-2bb5-4ec0-9228-6720eaec409f",
+        "x-runtime": "0.093666",
         "vary": "Accept-Encoding",
         "strict-transport-security": "max-age=15552000; includeSubDomains",
         "transfer-encoding": "chunked",
         "via": "1.1 vegur"
-      }
-    },
-    {
-      "url": "https://raw.githubusercontent.com/simformsolutions/SSCustomTabMenu/master/SSCustomTab.gif?raw=true",
-      "status": 200,
-      "error": null,
-      "headers": {
-        "content-security-policy": "default-src 'none'; style-src 'unsafe-inline'; sandbox",
-        "strict-transport-security": "max-age=31536000",
-        "x-content-type-options": "nosniff",
-        "x-frame-options": "deny",
-        "x-xss-protection": "1; mode=block",
-        "etag": "\"b64569e2b57f6e2a259bcda5974e196b2263dc87\"",
-        "content-type": "application/octet-stream",
-        "cache-control": "max-age=300",
-        "x-geo-block-list": "",
-        "x-github-request-id": "819C:279EB:114783B:1250423:5A59B753",
-        "content-length": "5964628",
-        "accept-ranges": "bytes",
-        "date": "Sat, 13 Jan 2018 07:38:26 GMT",
-        "via": "1.1 varnish",
-        "connection": "keep-alive",
-        "x-served-by": "cache-ams4431-AMS",
-        "x-cache": "HIT",
-        "x-cache-hits": "0",
-        "x-timer": "S1515829106.089079,VS0,VE1",
-        "vary": "Authorization,Accept-Encoding",
-        "access-control-allow-origin": "*",
-        "x-fastly-request-id": "3ddd55317334fc51c37cdef92d4d925e38555263",
-        "expires": "Sat, 13 Jan 2018 07:43:26 GMT"
       }
     }
   ]

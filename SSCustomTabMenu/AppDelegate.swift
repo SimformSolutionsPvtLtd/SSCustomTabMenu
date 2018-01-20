@@ -2,8 +2,28 @@
 //  AppDelegate.swift
 //  SSCustomTabMenu
 //
-//  Created by Satish Rajpurohit on 11/08/17.
-//  Copyright © 2017 Satish Rajpurohit. All rights reserved.
+//  Created by Simform Solutions on 11/08/17.
+//  Copyright © 2017 Simform Solutions. All rights reserved.
+//
+//
+//  Permission is hereby granted, free of charge, to any person obtaining a copy
+//  of this software and associated documentation files (the "Software"), to deal
+//  in the Software without restriction, including without limitation the rights
+//  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+//  copies of the Software, and to permit persons to whom the Software is
+//  furnished to do so, subject to the following conditions:
+//
+//  The above copyright notice and this permission notice shall be included in
+//  all copies or substantial portions of the Software.
+//
+//  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+//  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+//  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+//  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+//  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+//  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+//  THE SOFTWARE.
+//
 //
 
 import UIKit
@@ -29,33 +49,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
        
         //Tab Controllers
         
-        let plus = storyBoard.MainStoryboard?.instantiateViewController(withIdentifier: "PlusVC")
-       // let navigationController1 = UINavigationController(rootViewController: plus!)
-        //navigationController1.navigationBar.setNavigationBarColor(navigationController: navigationController1, color: UIColor.clear,textColor: UIColor(white:0.55, alpha:1.0))
-        
-        let music = storyBoard.MainStoryboard?.instantiateViewController(withIdentifier: "MusicVC")
-     
-        let Krewes:PlusVC? = storyBoard.MainStoryboard?.instantiateViewController(withIdentifier: "PlusVC") as! PlusVC?
+        let plusVC = UIStoryboard.MainStoryboard.instantiateViewController(withIdentifier: "PlusVC")
+        let musicVC = UIStoryboard.MainStoryboard.instantiateViewController(withIdentifier: "MusicVC")
+        let Krewes = UIStoryboard.MainStoryboard.instantiateViewController(withIdentifier: "PlusVC")
 
-        let navigationControllerKrewes = UINavigationController(rootViewController: Krewes!)
-        navigationControllerKrewes.navigationBar.setNavigationBarColor(navigationController: navigationControllerKrewes, color: UIColor.black,textColor: UIColor(white:0.55, alpha:1.0))
+        let tabController = UIStoryboard.TabMenuStoryboard.instantiateViewController(withIdentifier: "TabMenuVC") as! TabMenuVC
+        tabController.arrMenuItems[1] = MenuItem(viewControllerforMenu:Krewes, imageName: "Home",          menuItemTitle: "HOME")
+        tabController.arrMenuItems[2] = MenuItem(viewControllerforMenu:Krewes, imageName: "Krews",         menuItemTitle: "KREWS")
+        tabController.arrMenuItems[3] = MenuItem(viewControllerforMenu:Krewes, imageName: "Profile",       menuItemTitle: "PROFILE")
+        tabController.arrMenuItems[4] = MenuItem(viewControllerforMenu:Krewes, imageName: "Events",        menuItemTitle: "EVENTS")
+        tabController.arrMenuItems[5] = MenuItem(viewControllerforMenu:Krewes, imageName: "Artists",       menuItemTitle: "ARTISTS")
+        tabController.arrMenuItems[6] = MenuItem(viewControllerforMenu:Krewes, imageName: "Fan Finder",    menuItemTitle: "FAN FINDER")
         
-        let tabController = storyBoard.TabMenuStoryboard?.instantiateViewController(withIdentifier: "TabMenuVC") as! TabMenuVC
-        tabController.arrMenuItems[1] = MenuItem(viewControllerforMenu:Krewes!,  imageName: "Home", menuItemTitle: "HOME")
-        tabController.arrMenuItems[2] = MenuItem(viewControllerforMenu:Krewes!, imageName: "Krews", menuItemTitle: "KREWS")
-        tabController.arrMenuItems[3] = MenuItem(viewControllerforMenu:Krewes!, imageName: "Profile", menuItemTitle: "PROFILE")
-        tabController.arrMenuItems[4] = MenuItem(viewControllerforMenu:Krewes!, imageName: "Events", menuItemTitle: "EVENTS")
-        tabController.arrMenuItems[5] = MenuItem(viewControllerforMenu:Krewes!, imageName: "Artists", menuItemTitle: "ARTISTS")
-        tabController.arrMenuItems[6] = MenuItem(viewControllerforMenu:Krewes!, imageName: "FF", menuItemTitle: "FAN FINDER")
-        
-        tabController.centerTab = plus
-        tabController.RightTab = music
-        
+        tabController.centerTab = plusVC
+        tabController.RightTab = musicVC
 
-        MyDelegate.window!.rootViewController = tabController
+        self.window!.rootViewController = tabController
     }
-    
-   
     
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -14,12 +14,12 @@
         <!--PlusVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="PlusVC" automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="PlusVC" customModule="CutomTapWithBottomMenu" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PlusVC" automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="PlusVC" customModule="SSCustomTabMenu" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="GradientView" customModule="CutomTapWithBottomMenu" customModuleProvider="target">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="GradientView" customModule="SSCustomTabMenu" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -30,7 +30,7 @@
                                 </constraints>
                             </imageView>
                             <view tag="100" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VVd-9t-fIg">
-                                <rect key="frame" x="0.0" y="57" width="375" height="547"/>
+                                <rect key="frame" x="0.0" y="106" width="375" height="547"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="group2-1" translatesAutoresizingMaskIntoConstraints="NO" id="zMh-md-F7Y">
                                         <rect key="frame" x="20" y="78" width="336" height="376"/>
@@ -88,7 +88,7 @@
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="76A-md-BDv" secondAttribute="trailing" id="Xp3-kn-TXP"/>
                             <constraint firstItem="76A-md-BDv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="dR4-uM-GLF"/>
-                            <constraint firstItem="VVd-9t-fIg" firstAttribute="top" secondItem="76A-md-BDv" secondAttribute="bottom" constant="1" id="fF0-DA-SUT"/>
+                            <constraint firstItem="VVd-9t-fIg" firstAttribute="top" secondItem="76A-md-BDv" secondAttribute="bottom" constant="50" id="fF0-DA-SUT"/>
                             <constraint firstItem="VVd-9t-fIg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="qhw-eB-k87"/>
                             <constraint firstAttribute="trailing" secondItem="VVd-9t-fIg" secondAttribute="trailing" id="y6B-jq-xhF"/>
                             <constraint firstItem="76A-md-BDv" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="yHG-w6-iEI"/>
@@ -113,7 +113,7 @@
         <!--MusicVC-->
         <scene sceneID="QW2-c0-Prv">
             <objects>
-                <viewController storyboardIdentifier="MusicVC" automaticallyAdjustsScrollViewInsets="NO" id="TcL-Zh-yGg" customClass="MusicVC" customModule="CutomTapWithBottomMenu" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MusicVC" automaticallyAdjustsScrollViewInsets="NO" id="TcL-Zh-yGg" customClass="MusicVC" customModule="SSCustomTabMenu" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ok3-l4-LjS"/>
                         <viewControllerLayoutGuide type="bottom" id="2se-OQ-zhe"/>
@@ -135,12 +135,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h9y-Bv-39m" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="604" y="-152"/>
+            <point key="canvasLocation" x="593" y="-171"/>
         </scene>
         <!--KrewesVC-->
         <scene sceneID="FFM-de-YPL">
             <objects>
-                <viewController storyboardIdentifier="KrewesVC" automaticallyAdjustsScrollViewInsets="NO" id="DHO-gY-xfh" customClass="KrewesVC" customModule="CutomTapWithBottomMenu" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="KrewesVC" automaticallyAdjustsScrollViewInsets="NO" id="DHO-gY-xfh" customClass="KrewesVC" customModule="SSCustomTabMenu" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="127-IW-a8m"/>
                         <viewControllerLayoutGuide type="bottom" id="dJO-U0-3CS"/>
@@ -149,8 +149,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bitmap.png" translatesAutoresizingMaskIntoConstraints="NO" id="HQa-m5-J1M">
-                                <rect key="frame" x="0.0" y="120" width="375" height="372.5"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bitmap" translatesAutoresizingMaskIntoConstraints="NO" id="HQa-m5-J1M">
+                                <rect key="frame" x="0.0" y="120" width="375" height="373"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="HQa-m5-J1M" secondAttribute="height" multiplier="321:319" id="6q9-3q-Ow0"/>
                                 </constraints>
@@ -165,11 +165,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="idz-Oc-kXk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1340" y="36.431784107946029"/>
+            <point key="canvasLocation" x="1366" y="-171"/>
         </scene>
     </scenes>
     <resources>
-        <image name="Bitmap.png" width="375" height="319"/>
+        <image name="Bitmap" width="375" height="319"/>
         <image name="combined" width="20" height="20"/>
         <image name="favorites" width="25" height="24"/>
         <image name="feed" width="375" height="56"/>

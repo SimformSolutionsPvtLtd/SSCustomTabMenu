@@ -1,8 +1,29 @@
 //
 //  HamburgerView.swift
-//  Exported from Kite Compositor for Mac 1.7.6
+//  SSCustomTabMenu
 //
-//  Created on 27/12/17, 3:06 PM.
+//  Created by Simform Solutions on 11/08/17.
+//  Copyright © 2017 Simform Solutions. All rights reserved.
+//
+//
+//  Permission is hereby granted, free of charge, to any person obtaining a copy
+//  of this software and associated documentation files (the "Software"), to deal
+//  in the Software without restriction, including without limitation the rights
+//  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+//  copies of the Software, and to permit persons to whom the Software is
+//  furnished to do so, subject to the following conditions:
+//
+//  The above copyright notice and this permission notice shall be included in
+//  all copies or substantial portions of the Software.
+//
+//  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+//  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+//  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+//  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+//  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+//  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+//  THE SOFTWARE.
+//
 //
 
 
@@ -11,7 +32,7 @@ import UIKit
 public class HamburgerView: UIButton
 {
     // MARK: - Properties
-
+    private var animationDuration = 0.25
     private var ovalLayer: CAShapeLayer?
     private var shapeLayer2: CAShapeLayer?
     private var shapeLayer1: CAShapeLayer?
@@ -56,32 +77,14 @@ public class HamburgerView: UIButton
 
     private func setupLayers()
     {
-        // Images
-        //
-        guard let combinedShapePngImage = UIImage(named: "Combined-Shape.png") else {
-            fatalError("Warning: Unable to locate image named 'Combined-Shape.png'")
-        }
-
-        guard let combinedShapePngImage1 = UIImage(named: "Combined-Shape-1.png") else {
-            fatalError("Warning: Unable to locate image named 'Combined-Shape-1.png'")
-        }
-
-        guard let combinedShapePngImage2 = UIImage(named: "Combined-Shape-2.png") else {
-            fatalError("Warning: Unable to locate image named 'Combined-Shape-2.png'")
-        }
-
         // Colors
         //
-        let shadowcolor = UIColor(red: 0.047059, green: 0.105882, blue: 0.137255, alpha: 1)
-        let color = UIColor(red: 1, green: 1, blue: 1, alpha: 0)
-        let color1 = UIColor.white
-        let fillcolor = UIColor(red: 0.178306, green: 0.178306, blue: 0.178306, alpha: 1)
-        let strokecolor = UIColor(red: 0.806946, green: 0.806946, blue: 0.806946, alpha: 1)
-        let strokecolor1 = UIColor(red: 0, green: 0, blue: 0, alpha: 0)
-        let color2 = UIColor(red: 0.009054, green: 0.830696, blue: 0.972815, alpha: 1)
-        let color3 = UIColor(red: 0.007843, green: 0.831373, blue: 0.972549, alpha: 1)
-        let color4 = UIColor.white
-        let color5 = UIColor(red: 0.0096, green: 0.855215, blue: 0.999935, alpha: 1)
+        let shadowcolor     = UIColor(red: 0.047059, green: 0.105882, blue: 0.137255, alpha: 1)
+        let clearColor      = UIColor(red: 1, green: 1, blue: 1, alpha: 0)
+        let whiteColor      = UIColor.white
+        let fillcolor       = UIColor(red: 0.178306, green: 0.178306, blue: 0.178306, alpha: 1)
+        let strokecolor     = UIColor(red: 0.806946, green: 0.806946, blue: 0.806946, alpha: 1)
+        let lightBlueColor  = UIColor(red: 0.009054, green: 0.830696, blue: 0.972815, alpha: 1)
 
         // Paths
         //
@@ -158,25 +161,25 @@ public class HamburgerView: UIButton
                 //
                 let strokecolorAnimation = CABasicAnimation()
                 strokecolorAnimation.beginTime = 0.304
-                strokecolorAnimation.duration = 0.25
+                strokecolorAnimation.duration = animationDuration
                 strokecolorAnimation.fillMode = kCAFillModeForwards
                 strokecolorAnimation.isRemovedOnCompletion = false
                 strokecolorAnimation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
                 strokecolorAnimation.keyPath = "strokeColor"
-                strokecolorAnimation.toValue = color.cgColor
+                strokecolorAnimation.toValue = clearColor.cgColor
 
 
                 // Reverse-strokeColor
                 //
                 let reverseStrokecolorAnimation = CABasicAnimation()
                 reverseStrokecolorAnimation.beginTime = 0.791001
-                reverseStrokecolorAnimation.duration = 0.25
+                reverseStrokecolorAnimation.duration = animationDuration
                 reverseStrokecolorAnimation.fillMode = kCAFillModeForwards
                 reverseStrokecolorAnimation.isRemovedOnCompletion = false
                 reverseStrokecolorAnimation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
                 reverseStrokecolorAnimation.keyPath = "strokeColor"
-                reverseStrokecolorAnimation.toValue = color1.cgColor
-                reverseStrokecolorAnimation.fromValue = color.cgColor
+                reverseStrokecolorAnimation.toValue = whiteColor.cgColor
+                reverseStrokecolorAnimation.fromValue = clearColor.cgColor
 
             ovalLayer.path = ovalPath
             ovalLayer.fillColor = fillcolor.cgColor
@@ -186,30 +189,14 @@ public class HamburgerView: UIButton
 
             hamburgerLayer.addSublayer(ovalLayer)
 
-            // Combined Shape
+            // crossLayer
             //
-            let combinedShapeLayer = CAShapeLayer()
-            combinedShapeLayer.name = "Combined Shape"
-            combinedShapeLayer.bounds = CGRect(x: 0, y: 0, width: 22, height: 17)
-            combinedShapeLayer.position = CGPoint(x: 14, y: 17)
-            combinedShapeLayer.anchorPoint = CGPoint(x: 0, y: 0)
-            combinedShapeLayer.contents = combinedShapePngImage.cgImage
-            combinedShapeLayer.contentsGravity = kCAGravityCenter
-            combinedShapeLayer.isHidden = true
-            combinedShapeLayer.fillColor = color1.cgColor
-            combinedShapeLayer.strokeColor = strokecolor1.cgColor
-            combinedShapeLayer.lineWidth = 0
-
-            hamburgerLayer.addSublayer(combinedShapeLayer)
-
-            // noun_345386_cc
-            //
-            let nounCcLayer = CALayer()
-            nounCcLayer.name = "noun_345386_cc"
-            nounCcLayer.bounds = CGRect(x: 0, y: 0, width: 21, height: 18)
-            nounCcLayer.position = CGPoint(x: 15, y: 16)
-            nounCcLayer.anchorPoint = CGPoint(x: 0, y: 0)
-            nounCcLayer.contentsGravity = kCAGravityCenter
+            let crossLayer = CALayer()
+            crossLayer.name = "crossLayer"
+            crossLayer.bounds = CGRect(x: 0, y: 0, width: 21, height: 18)
+            crossLayer.position = CGPoint(x: 15, y: 16)
+            crossLayer.anchorPoint = CGPoint(x: 0, y: 0)
+            crossLayer.contentsGravity = kCAGravityCenter
 
                 // noun_345386_cc Sublayers
                 //
@@ -230,7 +217,7 @@ public class HamburgerView: UIButton
                     //
                     let transformRotationZAnimation = CAKeyframeAnimation()
                     transformRotationZAnimation.beginTime = 0.307
-                    transformRotationZAnimation.duration = 0.25
+                    transformRotationZAnimation.duration = animationDuration
                     transformRotationZAnimation.fillMode = kCAFillModeForwards
                     transformRotationZAnimation.isRemovedOnCompletion = false
                     transformRotationZAnimation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionDefault)
@@ -243,7 +230,7 @@ public class HamburgerView: UIButton
                     //
                     let positionYAnimation = CABasicAnimation()
                     positionYAnimation.beginTime = 0.304374
-                    positionYAnimation.duration = 0.25
+                    positionYAnimation.duration = animationDuration
                     positionYAnimation.fillMode = kCAFillModeForwards
                     positionYAnimation.isRemovedOnCompletion = false
                     positionYAnimation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionDefault)
@@ -255,7 +242,7 @@ public class HamburgerView: UIButton
                     //
                     let positionXAnimation = CABasicAnimation()
                     positionXAnimation.beginTime = 0.304374
-                    positionXAnimation.duration = 0.25
+                    positionXAnimation.duration = animationDuration
                     positionXAnimation.fillMode = kCAFillModeForwards
                     positionXAnimation.isRemovedOnCompletion = false
                     positionXAnimation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionDefault)
@@ -267,19 +254,19 @@ public class HamburgerView: UIButton
                     //
                     let fillcolorAnimation = CABasicAnimation()
                     fillcolorAnimation.beginTime = 0.304374
-                    fillcolorAnimation.duration = 0.25
+                    fillcolorAnimation.duration = animationDuration
                     fillcolorAnimation.fillMode = kCAFillModeForwards
                     fillcolorAnimation.isRemovedOnCompletion = false
                     fillcolorAnimation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
                     fillcolorAnimation.keyPath = "fillColor"
-                    fillcolorAnimation.toValue = color2.cgColor
+                    fillcolorAnimation.toValue = lightBlueColor.cgColor
 
 
                     // Reverse-transform.rotation.z
                     //
                     let reverseTransformRotationZAnimation = CAKeyframeAnimation()
                     reverseTransformRotationZAnimation.beginTime = 0.793627
-                    reverseTransformRotationZAnimation.duration = 0.25
+                    reverseTransformRotationZAnimation.duration = animationDuration
                     reverseTransformRotationZAnimation.fillMode = kCAFillModeForwards
                     reverseTransformRotationZAnimation.isRemovedOnCompletion = false
                     reverseTransformRotationZAnimation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionDefault)
@@ -292,7 +279,7 @@ public class HamburgerView: UIButton
                     //
                     let reversePositionYAnimation = CABasicAnimation()
                     reversePositionYAnimation.beginTime = 0.791001
-                    reversePositionYAnimation.duration = 0.25
+                    reversePositionYAnimation.duration = animationDuration
                     reversePositionYAnimation.fillMode = kCAFillModeForwards
                     reversePositionYAnimation.isRemovedOnCompletion = false
                     reversePositionYAnimation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionDefault)
@@ -305,7 +292,7 @@ public class HamburgerView: UIButton
                     //
                     let reversePositionXAnimation = CABasicAnimation()
                     reversePositionXAnimation.beginTime = 0.791001
-                    reversePositionXAnimation.duration = 0.25
+                    reversePositionXAnimation.duration = animationDuration
                     reversePositionXAnimation.fillMode = kCAFillModeForwards
                     reversePositionXAnimation.isRemovedOnCompletion = false
                     reversePositionXAnimation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionDefault)
@@ -317,21 +304,21 @@ public class HamburgerView: UIButton
                     //
                     let reverseFillcolorAnimation = CABasicAnimation()
                     reverseFillcolorAnimation.beginTime = 0.791001
-                    reverseFillcolorAnimation.duration = 0.25
+                    reverseFillcolorAnimation.duration = animationDuration
                     reverseFillcolorAnimation.fillMode = kCAFillModeForwards
                     reverseFillcolorAnimation.isRemovedOnCompletion = false
                     reverseFillcolorAnimation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
                     reverseFillcolorAnimation.keyPath = "fillColor"
-                    reverseFillcolorAnimation.toValue = color1.cgColor
-                    reverseFillcolorAnimation.fromValue = color3.cgColor
+                    reverseFillcolorAnimation.toValue = whiteColor.cgColor
+                    reverseFillcolorAnimation.fromValue = lightBlueColor.cgColor
 
                 shapeLayer.path = shapePath
-                shapeLayer.fillColor = color1.cgColor
-                shapeLayer.strokeColor = strokecolor1.cgColor
+                shapeLayer.fillColor = whiteColor.cgColor
+                shapeLayer.strokeColor = clearColor.cgColor
                 shapeLayer.fillRule = kCAFillRuleEvenOdd
                 shapeLayer.lineWidth = 0
 
-                nounCcLayer.addSublayer(shapeLayer)
+                crossLayer.addSublayer(shapeLayer)
 
                 // Shape-2
                 //
@@ -349,7 +336,7 @@ public class HamburgerView: UIButton
                     //
                     let opacityAnimation = CABasicAnimation()
                     opacityAnimation.beginTime = 0.299375
-                    opacityAnimation.duration = 0.25
+                    opacityAnimation.duration = animationDuration
                     opacityAnimation.fillMode = kCAFillModeForwards
                     opacityAnimation.isRemovedOnCompletion = false
                     opacityAnimation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionDefault)
@@ -361,7 +348,7 @@ public class HamburgerView: UIButton
                     //
                     let reverseOpacityAnimation = CABasicAnimation()
                     reverseOpacityAnimation.beginTime = 0.791001
-                    reverseOpacityAnimation.duration = 0.25
+                    reverseOpacityAnimation.duration = animationDuration
                     reverseOpacityAnimation.fillMode = kCAFillModeForwards
                     reverseOpacityAnimation.isRemovedOnCompletion = false
                     reverseOpacityAnimation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionDefault)
@@ -370,12 +357,12 @@ public class HamburgerView: UIButton
                     reverseOpacityAnimation.fromValue = 0
 
                 shapeLayer1.path = shapePath1
-                shapeLayer1.fillColor = color1.cgColor
-                shapeLayer1.strokeColor = strokecolor1.cgColor
+                shapeLayer1.fillColor = whiteColor.cgColor
+                shapeLayer1.strokeColor = clearColor.cgColor
                 shapeLayer1.fillRule = kCAFillRuleEvenOdd
                 shapeLayer1.lineWidth = 0
 
-                nounCcLayer.addSublayer(shapeLayer1)
+                crossLayer.addSublayer(shapeLayer1)
 
                 // Shape-1
                 //
@@ -435,7 +422,7 @@ public class HamburgerView: UIButton
                     fillcolorAnimation1.isRemovedOnCompletion = false
                     fillcolorAnimation1.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
                     fillcolorAnimation1.keyPath = "fillColor"
-                    fillcolorAnimation1.toValue = color2.cgColor
+                    fillcolorAnimation1.toValue = lightBlueColor.cgColor
 
 
                     // Reverse-transform.rotation.z
@@ -484,66 +471,29 @@ public class HamburgerView: UIButton
                     reverseFillcolorAnimation1.isRemovedOnCompletion = false
                     reverseFillcolorAnimation1.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
                     reverseFillcolorAnimation1.keyPath = "fillColor"
-                    reverseFillcolorAnimation1.toValue = color4.cgColor
-                    reverseFillcolorAnimation1.fromValue = color5.cgColor
+                    reverseFillcolorAnimation1.toValue = whiteColor.cgColor
+                    reverseFillcolorAnimation1.fromValue = lightBlueColor.cgColor
 
                 shapeLayer2.path = shapePath2
-                shapeLayer2.fillColor = color1.cgColor
-                shapeLayer2.strokeColor = strokecolor1.cgColor
+                shapeLayer2.fillColor = whiteColor.cgColor
+                shapeLayer2.strokeColor = clearColor.cgColor
                 shapeLayer2.fillRule = kCAFillRuleEvenOdd
                 shapeLayer2.lineWidth = 0
 
-                nounCcLayer.addSublayer(shapeLayer2)
+                crossLayer.addSublayer(shapeLayer2)
 
-            hamburgerLayer.addSublayer(nounCcLayer)
+            hamburgerLayer.addSublayer(crossLayer)
 
-            // Combined Shape
+            // theeLineLayer
             //
-            let combinedShapeLayer1 = CAShapeLayer()
-            combinedShapeLayer1.name = "Combined Shape"
-            combinedShapeLayer1.bounds = CGRect(x: 0, y: 0, width: 22, height: 16)
-            combinedShapeLayer1.position = CGPoint(x: 14, y: 17)
-            combinedShapeLayer1.anchorPoint = CGPoint(x: 0, y: 0)
-            combinedShapeLayer1.contents = combinedShapePngImage1.cgImage
-            combinedShapeLayer1.contentsGravity = kCAGravityCenter
-            combinedShapeLayer1.isHidden = true
-            combinedShapeLayer1.fillColor = color1.cgColor
-            combinedShapeLayer1.strokeColor = strokecolor1.cgColor
-            combinedShapeLayer1.fillRule = kCAFillRuleEvenOdd
-            combinedShapeLayer1.lineWidth = 0
-
-            hamburgerLayer.addSublayer(combinedShapeLayer1)
-
-            // 1481058617_th-menu
-            //
-            let thMenuLayer = CALayer()
-            thMenuLayer.name = "1481058617_th-menu"
-            thMenuLayer.bounds = CGRect(x: 0, y: 0, width: 18, height: 18)
-            thMenuLayer.position = CGPoint(x: 16, y: 16)
-            thMenuLayer.anchorPoint = CGPoint(x: 0, y: 0)
-            thMenuLayer.contentsGravity = kCAGravityCenter
-            thMenuLayer.isHidden = true
-
-                // 1481058617_th-menu Sublayers
-                //
-
-                // Combined Shape
-                //
-                let combinedShapeLayer2 = CAShapeLayer()
-                combinedShapeLayer2.name = "Combined Shape"
-                combinedShapeLayer2.bounds = CGRect(x: 0, y: 0, width: 18, height: 18)
-                combinedShapeLayer2.position = CGPoint(x: 0, y: 0)
-                combinedShapeLayer2.anchorPoint = CGPoint(x: 0, y: 0)
-                combinedShapeLayer2.contents = combinedShapePngImage2.cgImage
-                combinedShapeLayer2.contentsGravity = kCAGravityCenter
-                combinedShapeLayer2.fillColor = color1.cgColor
-                combinedShapeLayer2.strokeColor = strokecolor1.cgColor
-                combinedShapeLayer2.fillRule = kCAFillRuleEvenOdd
-                combinedShapeLayer2.lineWidth = 0
-
-                thMenuLayer.addSublayer(combinedShapeLayer2)
-
-            hamburgerLayer.addSublayer(thMenuLayer)
+            let theeLineLayer = CALayer()
+            theeLineLayer.name = "theeLineLayer"
+            theeLineLayer.bounds = CGRect(x: 0, y: 0, width: 18, height: 18)
+            theeLineLayer.position = CGPoint(x: 16, y: 16)
+            theeLineLayer.anchorPoint = CGPoint(x: 0, y: 0)
+            theeLineLayer.contentsGravity = kCAGravityCenter
+            theeLineLayer.isHidden = true
+            hamburgerLayer.addSublayer(theeLineLayer)
 
         self.layer.addSublayer(hamburgerLayer)
 
@@ -576,29 +526,10 @@ public class HamburgerView: UIButton
         self.reversePositionYAnimation1 = reversePositionYAnimation1
         self.reversePositionXAnimation1 = reversePositionXAnimation1
         self.reverseFillcolorAnimation1 = reverseFillcolorAnimation1
-
     }
 
-    // MARK: - Responder
-
-//    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?)
-//    {
-//        guard let location = touches.first?.location(in: self.superview),
-//              let hitLayer = self.layer.presentation()?.hitTest(location) else { return }
-//
-//        print("Layer \(hitLayer.name ?? String(describing: hitLayer)) was tapped.")
-//
-//        // Call action methods
-//        //
-//        //self.clickoneAction(self)
-//       // self.clicktwoAction(self)
-//    }
-
     // MARK: - Actions
-
-   
-
-    func clicktwoAction()
+    func openBottomMenu()
     {
         self.reverseTransformRotationZAnimation1!.beginTime = self.shapeLayer2!.convertTime(CACurrentMediaTime(), from: nil)
         self.shapeLayer2?.add(self.reverseTransformRotationZAnimation1!, forKey: "reverseTransformRotationZAnimation1")
@@ -631,7 +562,7 @@ public class HamburgerView: UIButton
         self.ovalLayer?.add(self.reverseStrokecolorAnimation!, forKey: "reverseStrokecolorAnimation")
     }
     
-    func clickoneAction()
+    func closeBottomMenu()
     {
         self.strokecolorAnimation!.beginTime = self.ovalLayer!.convertTime(CACurrentMediaTime(), from: nil)
         self.ovalLayer?.add(self.strokecolorAnimation!, forKey: "strokecolorAnimation")
@@ -662,8 +593,6 @@ public class HamburgerView: UIButton
         
         self.positionYAnimation!.beginTime = self.shapeLayer!.convertTime(CACurrentMediaTime(), from: nil)
         self.shapeLayer?.add(self.positionYAnimation!, forKey: "positionYAnimation")
-        
-        
-        
     }
+    
 }

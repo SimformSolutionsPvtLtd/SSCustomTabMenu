@@ -2,8 +2,28 @@
 //  TabMenuVC.swift
 //  SSCustomTabMenu
 //
-//  Created by Satish Rajpurohit on 11/08/17.
-//  Copyright © 2017 Satish Rajpurohit. All rights reserved.
+//  Created by Simform Solutions on 11/08/17.
+//  Copyright © 2017 Simform Solutions. All rights reserved.
+//
+//
+//  Permission is hereby granted, free of charge, to any person obtaining a copy
+//  of this software and associated documentation files (the "Software"), to deal
+//  in the Software without restriction, including without limitation the rights
+//  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+//  copies of the Software, and to permit persons to whom the Software is
+//  furnished to do so, subject to the following conditions:
+//
+//  The above copyright notice and this permission notice shall be included in
+//  all copies or substantial portions of the Software.
+//
+//  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+//  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+//  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+//  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+//  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+//  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+//  THE SOFTWARE.
+//
 //
 
 import UIKit
@@ -80,12 +100,6 @@ public class TabMenuVC: UIViewController,BasicAnimation{
     @IBAction func didPressTab(_ sender: UIButton){
         self.tabAndMenuSelected(index: sender.tag,previousType: selectedType,currentType: TypeofSelection.tab)
     }
-    
-    @IBAction func didPressMenuItem(_ sender: UIButton) {
-        self.tabAndMenuSelected(index: sender.tag,previousType: selectedType,currentType: TypeofSelection.menu)
-    }
-    
-    
 }
 
 extension TabMenuVC : UICollectionViewDelegate,UICollectionViewDataSource {
@@ -160,13 +174,13 @@ extension TabMenuVC{
             CMenuTabHeight.constant = totalTabMenuHeight + tabBarHeight
             CContainerBottom.constant = -totalTabMenuHeight + tabBarHeight
             
-            self.tabMenu.clickoneAction()
+            self.tabMenu.closeBottomMenu()
         }
         else{
             tabButton[menuIndex].borderColor = UIColor.white
             tabButton[menuIndex].isSelected = false
             if(status != OnOpenCloseAnimType.openMenu){
-                self.positionYAnimation(self.backImageView!, duration: 1,fromValue: self.totalTabMenuHeight+64)
+               self.positionYAnimation(self.backImageView!, duration: 1,fromValue: self.totalTabMenuHeight+64)
             }
             
             ReverseScaleAnimation(self.containerView, duration: animationTime)
@@ -174,9 +188,8 @@ extension TabMenuVC{
             
             CMenuTabHeight.constant = tabBarHeight
             CContainerBottom.constant = 0
-            self.tabMenu.clicktwoAction()
+            self.tabMenu.openBottomMenu()
         }
-        
         
         UIView.animate(withDuration: animationTime, animations: {
             self.view.layoutIfNeeded()
@@ -193,7 +206,6 @@ extension TabMenuVC{
         }
         else{
             let previousIndex = selectedIndex
-            // tabButton[previousIndex].isSelected = false
             selectedIndex = index
             
             var previousVC:UIViewController
@@ -204,24 +216,20 @@ extension TabMenuVC{
             }
             else{
                 previousVC = arrMenuItems[previousIndex+1]!.viewControllerforMenu
-                //previousVC = menuController[previousIndex]
             }
             
             
-            let ScreenShot:UIImage =  previousVC.view.takeSnapshot(CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: self.view.frame.size.height))!//SS
+            let ScreenShot:UIImage =  previousVC.view.takeSnapshot(self.view.bounds)!//SS
             self.backImageView = self.addImageToView(self.containerView, image: ScreenShot)//SS
             
             previousVC.willMove(toParentViewController: nil)
             previousVC.view.removeFromSuperview()
             previousVC.removeFromParentViewController()
             
-            //sender.isSelected = true
             if(currentType == TypeofSelection.tab){
                 vc = tabControllers[selectedIndex]
-                
             }
             else{
-                //vc = menuController[selectedIndex]
                 vc = arrMenuItems[selectedIndex+1]!.viewControllerforMenu
             }
             
@@ -237,7 +245,6 @@ extension TabMenuVC{
                     DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
                         self.backImageView!.removeFromSuperview()
                     }
-                    // self.OpenMenuClose(status: .openMenu)
                 }
                 else{
                     
@@ -253,12 +260,8 @@ extension TabMenuVC{
             else{
                 // self.OpenMenuClose(status: .normalClose)
             }
-            
-            
             selectedType = currentType
-            
         }
-        
     }
     
     fileprivate func addImageToView(_ view: UIView, image: UIImage?) -> UIImageView? {
@@ -270,7 +273,6 @@ extension TabMenuVC{
         }
         return imageView
     }
-    
     
 }
 
